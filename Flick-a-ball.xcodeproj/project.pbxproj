@@ -12,6 +12,8 @@
 		0932162917418CAD0066CBB5 /* GB2ShapeCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0932162217418CAD0066CBB5 /* GB2ShapeCache.mm */; };
 		0932162A17418CAD0066CBB5 /* Helper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0932162417418CAD0066CBB5 /* Helper.mm */; };
 		0932162B17418CAD0066CBB5 /* PhysicsSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0932162617418CAD0066CBB5 /* PhysicsSprite.mm */; };
+		09321630174190070066CBB5 /* GameplayScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 0932162F174190070066CBB5 /* GameplayScene.m */; };
+		093216341741924E0066CBB5 /* GameplayLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 093216331741924E0066CBB5 /* GameplayLayer.m */; };
 		DC21B88B1511078F00FD4891 /* fps_images-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B8881511078F00FD4891 /* fps_images-hd.png */; };
 		DC21B88C1511078F00FD4891 /* fps_images-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B8891511078F00FD4891 /* fps_images-ipadhd.png */; };
 		DC21B88D1511078F00FD4891 /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B88A1511078F00FD4891 /* fps_images.png */; };
@@ -65,6 +67,10 @@
 		0932162417418CAD0066CBB5 /* Helper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Helper.mm; path = Code/Base/Helper.mm; sourceTree = "<group>"; };
 		0932162517418CAD0066CBB5 /* PhysicsSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhysicsSprite.h; path = Code/Base/PhysicsSprite.h; sourceTree = "<group>"; };
 		0932162617418CAD0066CBB5 /* PhysicsSprite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PhysicsSprite.mm; path = Code/Base/PhysicsSprite.mm; sourceTree = "<group>"; };
+		0932162E174190070066CBB5 /* GameplayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameplayScene.h; path = Code/GameplayScene.h; sourceTree = "<group>"; };
+		0932162F174190070066CBB5 /* GameplayScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameplayScene.m; path = Code/GameplayScene.m; sourceTree = "<group>"; };
+		093216321741924E0066CBB5 /* GameplayLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameplayLayer.h; path = Code/GameplayLayer.h; sourceTree = "<group>"; };
+		093216331741924E0066CBB5 /* GameplayLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameplayLayer.m; path = Code/GameplayLayer.m; sourceTree = "<group>"; };
 		DC21B8881511078F00FD4891 /* fps_images-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fps_images-hd.png"; sourceTree = "<group>"; };
 		DC21B8891511078F00FD4891 /* fps_images-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fps_images-ipadhd.png"; sourceTree = "<group>"; };
 		DC21B88A1511078F00FD4891 /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fps_images.png; sourceTree = "<group>"; };
@@ -169,6 +175,33 @@
 			name = Base;
 			sourceTree = "<group>";
 		};
+		0932162C17418F530066CBB5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0932162D17418FCB0066CBB5 /* GameplayScene */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		0932162D17418FCB0066CBB5 /* GameplayScene */ = {
+			isa = PBXGroup;
+			children = (
+				09321631174191FA0066CBB5 /* Layers */,
+				0932162E174190070066CBB5 /* GameplayScene.h */,
+				0932162F174190070066CBB5 /* GameplayScene.m */,
+			);
+			name = GameplayScene;
+			sourceTree = "<group>";
+		};
+		09321631174191FA0066CBB5 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				093216321741924E0066CBB5 /* GameplayLayer.h */,
+				093216331741924E0066CBB5 /* GameplayLayer.m */,
+			);
+			name = Layers;
+			sourceTree = "<group>";
+		};
 		DCC1A0D613A94EC0005BD75D = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +289,7 @@
 		DCC1A38C13A94F1A005BD75D /* Projectfiles */ = {
 			isa = PBXGroup;
 			children = (
+				0932162C17418F530066CBB5 /* Scenes */,
 				0932161B17418C0C0066CBB5 /* Base */,
 				DCC1A38D13A94F1A005BD75D /* AppDelegate.h */,
 				DCC1A38E13A94F1A005BD75D /* AppDelegate.m */,
@@ -407,6 +441,8 @@
 				0932162917418CAD0066CBB5 /* GB2ShapeCache.mm in Sources */,
 				0932162A17418CAD0066CBB5 /* Helper.mm in Sources */,
 				0932162B17418CAD0066CBB5 /* PhysicsSprite.mm in Sources */,
+				09321630174190070066CBB5 /* GameplayScene.m in Sources */,
+				093216341741924E0066CBB5 /* GameplayLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +493,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DCFA90EF13B4F6F7009DD35A /* BuildSettings-Debug-iOS.xcconfig */;
 			buildSettings = {
+				GCC_PREFIX_HEADER = "Projectfiles/Code/Prefix-iOS.pch";
 			};
 			name = Debug;
 		};
@@ -464,6 +501,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DCFA90F013B4F811009DD35A /* BuildSettings-Release-iOS.xcconfig */;
 			buildSettings = {
+				GCC_PREFIX_HEADER = "Projectfiles/Code/Prefix-iOS.pch";
 			};
 			name = Release;
 		};
