@@ -9,8 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 
+@class BackgroundLayer;
+@class GameplayLayer;
+
 @interface GameplayScene : CCScene {
-    
+    BackgroundLayer *_backgroundLayer;
+    GameplayLayer *_gameplayLayer;
 }
 
 @end

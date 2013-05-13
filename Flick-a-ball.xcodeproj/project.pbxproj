@@ -12,8 +12,10 @@
 		0932162917418CAD0066CBB5 /* GB2ShapeCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0932162217418CAD0066CBB5 /* GB2ShapeCache.mm */; };
 		0932162A17418CAD0066CBB5 /* Helper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0932162417418CAD0066CBB5 /* Helper.mm */; };
 		0932162B17418CAD0066CBB5 /* PhysicsSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0932162617418CAD0066CBB5 /* PhysicsSprite.mm */; };
-		09321630174190070066CBB5 /* GameplayScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 0932162F174190070066CBB5 /* GameplayScene.m */; };
-		093216341741924E0066CBB5 /* GameplayLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 093216331741924E0066CBB5 /* GameplayLayer.m */; };
+		09321630174190070066CBB5 /* GameplayScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0932162F174190070066CBB5 /* GameplayScene.mm */; };
+		093216341741924E0066CBB5 /* GameplayLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 093216331741924E0066CBB5 /* GameplayLayer.mm */; };
+		093216381741939C0066CBB5 /* BackgroundLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 093216371741939C0066CBB5 /* BackgroundLayer.mm */; };
+		0932163B174194D10066CBB5 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09321639174194D10066CBB5 /* GLES-Render.mm */; };
 		DC21B88B1511078F00FD4891 /* fps_images-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B8881511078F00FD4891 /* fps_images-hd.png */; };
 		DC21B88C1511078F00FD4891 /* fps_images-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B8891511078F00FD4891 /* fps_images-ipadhd.png */; };
 		DC21B88D1511078F00FD4891 /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B88A1511078F00FD4891 /* fps_images.png */; };
@@ -68,9 +70,13 @@
 		0932162517418CAD0066CBB5 /* PhysicsSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhysicsSprite.h; path = Code/Base/PhysicsSprite.h; sourceTree = "<group>"; };
 		0932162617418CAD0066CBB5 /* PhysicsSprite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PhysicsSprite.mm; path = Code/Base/PhysicsSprite.mm; sourceTree = "<group>"; };
 		0932162E174190070066CBB5 /* GameplayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameplayScene.h; path = Code/GameplayScene.h; sourceTree = "<group>"; };
-		0932162F174190070066CBB5 /* GameplayScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameplayScene.m; path = Code/GameplayScene.m; sourceTree = "<group>"; };
+		0932162F174190070066CBB5 /* GameplayScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GameplayScene.mm; path = Code/GameplayScene.mm; sourceTree = "<group>"; };
 		093216321741924E0066CBB5 /* GameplayLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameplayLayer.h; path = Code/GameplayLayer.h; sourceTree = "<group>"; };
-		093216331741924E0066CBB5 /* GameplayLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameplayLayer.m; path = Code/GameplayLayer.m; sourceTree = "<group>"; };
+		093216331741924E0066CBB5 /* GameplayLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GameplayLayer.mm; path = Code/GameplayLayer.mm; sourceTree = "<group>"; };
+		093216361741939C0066CBB5 /* BackgroundLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackgroundLayer.h; path = Code/BackgroundLayer.h; sourceTree = "<group>"; };
+		093216371741939C0066CBB5 /* BackgroundLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BackgroundLayer.mm; path = Code/BackgroundLayer.mm; sourceTree = "<group>"; };
+		09321639174194D10066CBB5 /* GLES-Render.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "GLES-Render.mm"; path = "Code/Base/GLES-Render.mm"; sourceTree = "<group>"; };
+		0932163A174194D10066CBB5 /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GLES-Render.h"; path = "Code/Base/GLES-Render.h"; sourceTree = "<group>"; };
 		DC21B8881511078F00FD4891 /* fps_images-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fps_images-hd.png"; sourceTree = "<group>"; };
 		DC21B8891511078F00FD4891 /* fps_images-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fps_images-ipadhd.png"; sourceTree = "<group>"; };
 		DC21B88A1511078F00FD4891 /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fps_images.png; sourceTree = "<group>"; };
@@ -160,6 +166,8 @@
 		0932161B17418C0C0066CBB5 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				09321639174194D10066CBB5 /* GLES-Render.mm */,
+				0932163A174194D10066CBB5 /* GLES-Render.h */,
 				0932161C17418CAD0066CBB5 /* BodySprite.h */,
 				0932161D17418CAD0066CBB5 /* BodySprite.mm */,
 				0932161E17418CAD0066CBB5 /* Constants.h */,
@@ -188,7 +196,7 @@
 			children = (
 				09321631174191FA0066CBB5 /* Layers */,
 				0932162E174190070066CBB5 /* GameplayScene.h */,
-				0932162F174190070066CBB5 /* GameplayScene.m */,
+				0932162F174190070066CBB5 /* GameplayScene.mm */,
 			);
 			name = GameplayScene;
 			sourceTree = "<group>";
@@ -197,7 +205,9 @@
 			isa = PBXGroup;
 			children = (
 				093216321741924E0066CBB5 /* GameplayLayer.h */,
-				093216331741924E0066CBB5 /* GameplayLayer.m */,
+				093216331741924E0066CBB5 /* GameplayLayer.mm */,
+				093216361741939C0066CBB5 /* BackgroundLayer.h */,
+				093216371741939C0066CBB5 /* BackgroundLayer.mm */,
 			);
 			name = Layers;
 			sourceTree = "<group>";
@@ -289,8 +299,8 @@
 		DCC1A38C13A94F1A005BD75D /* Projectfiles */ = {
 			isa = PBXGroup;
 			children = (
-				0932162C17418F530066CBB5 /* Scenes */,
 				0932161B17418C0C0066CBB5 /* Base */,
+				0932162C17418F530066CBB5 /* Scenes */,
 				DCC1A38D13A94F1A005BD75D /* AppDelegate.h */,
 				DCC1A38E13A94F1A005BD75D /* AppDelegate.m */,
 				DCC1A39413A94F1A005BD75D /* Resources */,
@@ -441,8 +451,10 @@
 				0932162917418CAD0066CBB5 /* GB2ShapeCache.mm in Sources */,
 				0932162A17418CAD0066CBB5 /* Helper.mm in Sources */,
 				0932162B17418CAD0066CBB5 /* PhysicsSprite.mm in Sources */,
-				09321630174190070066CBB5 /* GameplayScene.m in Sources */,
-				093216341741924E0066CBB5 /* GameplayLayer.m in Sources */,
+				09321630174190070066CBB5 /* GameplayScene.mm in Sources */,
+				093216341741924E0066CBB5 /* GameplayLayer.mm in Sources */,
+				093216381741939C0066CBB5 /* BackgroundLayer.mm in Sources */,
+				0932163B174194D10066CBB5 /* GLES-Render.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

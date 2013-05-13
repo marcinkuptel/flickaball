@@ -33,6 +33,9 @@
 // Wax (and Lua) headers
 #import "luawax.h"
 
+#else
+#import "Box2D.h"
+
 #endif // __OBJC__
 
 
