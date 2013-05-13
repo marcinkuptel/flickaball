@@ -212,6 +212,36 @@
 			name = Layers;
 			sourceTree = "<group>";
 		};
+		0932163C174196C50066CBB5 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				0932163F174196D90066CBB5 /* non-retina */,
+				0932163E174196D40066CBB5 /* retina */,
+			);
+			name = Graphics;
+			sourceTree = "<group>";
+		};
+		0932163D174196CE0066CBB5 /* Physics */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Physics;
+			sourceTree = "<group>";
+		};
+		0932163E174196D40066CBB5 /* retina */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = retina;
+			sourceTree = "<group>";
+		};
+		0932163F174196D90066CBB5 /* non-retina */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "non-retina";
+			sourceTree = "<group>";
+		};
 		DCC1A0D613A94EC0005BD75D = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +342,8 @@
 		DCC1A39413A94F1A005BD75D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0932163D174196CE0066CBB5 /* Physics */,
+				0932163C174196C50066CBB5 /* Graphics */,
 				DCC1A39513A94F1A005BD75D /* config.lua */,
 			);
 			path = Resources;
