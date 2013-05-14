@@ -16,6 +16,13 @@
 		093216341741924E0066CBB5 /* GameplayLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 093216331741924E0066CBB5 /* GameplayLayer.mm */; };
 		093216381741939C0066CBB5 /* BackgroundLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 093216371741939C0066CBB5 /* BackgroundLayer.mm */; };
 		0932163B174194D10066CBB5 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09321639174194D10066CBB5 /* GLES-Render.mm */; };
+		09A173E31742BF24000AD779 /* Ball.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09A173E21742BF24000AD779 /* Ball.mm */; };
+		09A173E61742D049000AD779 /* gameplayLayer-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09A173E41742D049000AD779 /* gameplayLayer-ipad.plist */; };
+		09A173E71742D049000AD779 /* gameplayLayer-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A173E51742D049000AD779 /* gameplayLayer-ipad.png */; };
+		09A173EA1742D055000AD779 /* gameplayLayer-ipadhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09A173E81742D055000AD779 /* gameplayLayer-ipadhd.plist */; };
+		09A173EB1742D055000AD779 /* gameplayLayer-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A173E91742D055000AD779 /* gameplayLayer-ipadhd.png */; };
+		09A173EE1742D1C1000AD779 /* physics-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09A173EC1742D1C1000AD779 /* physics-ipad.plist */; };
+		09A173EF1742D1C1000AD779 /* physics-ipadhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09A173ED1742D1C1000AD779 /* physics-ipadhd.plist */; };
 		DC21B88B1511078F00FD4891 /* fps_images-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B8881511078F00FD4891 /* fps_images-hd.png */; };
 		DC21B88C1511078F00FD4891 /* fps_images-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B8891511078F00FD4891 /* fps_images-ipadhd.png */; };
 		DC21B88D1511078F00FD4891 /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B88A1511078F00FD4891 /* fps_images.png */; };
@@ -77,6 +84,14 @@
 		093216371741939C0066CBB5 /* BackgroundLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BackgroundLayer.mm; path = Code/BackgroundLayer.mm; sourceTree = "<group>"; };
 		09321639174194D10066CBB5 /* GLES-Render.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "GLES-Render.mm"; path = "Code/Base/GLES-Render.mm"; sourceTree = "<group>"; };
 		0932163A174194D10066CBB5 /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GLES-Render.h"; path = "Code/Base/GLES-Render.h"; sourceTree = "<group>"; };
+		09A173E11742BF24000AD779 /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ball.h; path = Code/Ball.h; sourceTree = "<group>"; };
+		09A173E21742BF24000AD779 /* Ball.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Ball.mm; path = Code/Ball.mm; sourceTree = "<group>"; };
+		09A173E41742D049000AD779 /* gameplayLayer-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "gameplayLayer-ipad.plist"; path = "Graphics/non-retina/gameplayLayer-ipad.plist"; sourceTree = "<group>"; };
+		09A173E51742D049000AD779 /* gameplayLayer-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gameplayLayer-ipad.png"; path = "Graphics/non-retina/gameplayLayer-ipad.png"; sourceTree = "<group>"; };
+		09A173E81742D055000AD779 /* gameplayLayer-ipadhd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "gameplayLayer-ipadhd.plist"; path = "Graphics/retina/gameplayLayer-ipadhd.plist"; sourceTree = "<group>"; };
+		09A173E91742D055000AD779 /* gameplayLayer-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gameplayLayer-ipadhd.png"; path = "Graphics/retina/gameplayLayer-ipadhd.png"; sourceTree = "<group>"; };
+		09A173EC1742D1C1000AD779 /* physics-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "physics-ipad.plist"; path = "Physics/physics-ipad.plist"; sourceTree = "<group>"; };
+		09A173ED1742D1C1000AD779 /* physics-ipadhd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "physics-ipadhd.plist"; path = "Physics/physics-ipadhd.plist"; sourceTree = "<group>"; };
 		DC21B8881511078F00FD4891 /* fps_images-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fps_images-hd.png"; sourceTree = "<group>"; };
 		DC21B8891511078F00FD4891 /* fps_images-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fps_images-ipadhd.png"; sourceTree = "<group>"; };
 		DC21B88A1511078F00FD4891 /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fps_images.png; sourceTree = "<group>"; };
@@ -194,6 +209,7 @@
 		0932162D17418FCB0066CBB5 /* GameplayScene */ = {
 			isa = PBXGroup;
 			children = (
+				09A173E01742BECE000AD779 /* Objects */,
 				09321631174191FA0066CBB5 /* Layers */,
 				0932162E174190070066CBB5 /* GameplayScene.h */,
 				0932162F174190070066CBB5 /* GameplayScene.mm */,
@@ -224,6 +240,8 @@
 		0932163D174196CE0066CBB5 /* Physics */ = {
 			isa = PBXGroup;
 			children = (
+				09A173EC1742D1C1000AD779 /* physics-ipad.plist */,
+				09A173ED1742D1C1000AD779 /* physics-ipadhd.plist */,
 			);
 			name = Physics;
 			sourceTree = "<group>";
@@ -231,6 +249,8 @@
 		0932163E174196D40066CBB5 /* retina */ = {
 			isa = PBXGroup;
 			children = (
+				09A173E81742D055000AD779 /* gameplayLayer-ipadhd.plist */,
+				09A173E91742D055000AD779 /* gameplayLayer-ipadhd.png */,
 			);
 			name = retina;
 			sourceTree = "<group>";
@@ -238,8 +258,19 @@
 		0932163F174196D90066CBB5 /* non-retina */ = {
 			isa = PBXGroup;
 			children = (
+				09A173E41742D049000AD779 /* gameplayLayer-ipad.plist */,
+				09A173E51742D049000AD779 /* gameplayLayer-ipad.png */,
 			);
 			name = "non-retina";
+			sourceTree = "<group>";
+		};
+		09A173E01742BECE000AD779 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				09A173E11742BF24000AD779 /* Ball.h */,
+				09A173E21742BF24000AD779 /* Ball.mm */,
+			);
+			name = Objects;
 			sourceTree = "<group>";
 		};
 		DCC1A0D613A94EC0005BD75D = {
@@ -454,6 +485,12 @@
 				DC21B88D1511078F00FD4891 /* fps_images.png in Resources */,
 				DC27219F160CADFF00D88944 /* Default-568h@2x.png in Resources */,
 				DC2721A8160CAFA600D88944 /* iTunesArtwork in Resources */,
+				09A173E61742D049000AD779 /* gameplayLayer-ipad.plist in Resources */,
+				09A173E71742D049000AD779 /* gameplayLayer-ipad.png in Resources */,
+				09A173EA1742D055000AD779 /* gameplayLayer-ipadhd.plist in Resources */,
+				09A173EB1742D055000AD779 /* gameplayLayer-ipadhd.png in Resources */,
+				09A173EE1742D1C1000AD779 /* physics-ipad.plist in Resources */,
+				09A173EF1742D1C1000AD779 /* physics-ipadhd.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +524,7 @@
 				093216341741924E0066CBB5 /* GameplayLayer.mm in Sources */,
 				093216381741939C0066CBB5 /* BackgroundLayer.mm in Sources */,
 				0932163B174194D10066CBB5 /* GLES-Render.mm in Sources */,
+				09A173E31742BF24000AD779 /* Ball.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
