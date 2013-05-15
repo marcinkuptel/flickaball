@@ -10,9 +10,32 @@
 #import "Helper.h"
 #import "Ball.h"
 
+
+const float32 FIXED_TIMESTEP = 1.0f / 60.0f;
+
+// Minimum remaining time to avoid box2d unstability caused by very small delta times
+// if remaining time to simulate is smaller than this, the rest of time will be added to the last step,
+// instead of performing one more single step with only the small delta time.
+const float32 MINIMUM_TIMESTEP = 1.0f / 600.0f;
+
+const int32 VELOCITY_ITERATIONS = 8;
+const int32 POSITION_ITERATIONS = 8;
+
+// maximum number of steps per tick to avoid spiral of death
+const int32 MAXIMUM_NUMBER_OF_STEPS = 25;
+
+typedef NS_ENUM(NSUInteger, GLBallFlickState)
+{
+    GLBallFlickStateNone = 0,
+    GLBallFlickStateAiming
+};
+
+
 @interface GameplayLayer ()
 
 @property (nonatomic, strong) Ball *ball;
+@property (nonatomic, assign) GLBallFlickState ballFlickState;
+@property (nonatomic, assign) CGPoint ballOrigin;
 
 @end
 
@@ -33,6 +56,12 @@
         
         [self addBall];
         
+        
+        //add touch delegate
+        [[CCDirector sharedDirector].touchDispatcher addTargetedDelegate: self
+                                                                priority: 0
+                                                         swallowsTouches: NO];
+        
         [self scheduleUpdate];
     }
     return self;
@@ -46,6 +75,14 @@
     delete _debugDraw;
     _debugDraw = NULL;
 }
+
+
+- (void) cleanup
+{
+    [super cleanup];
+    [[CCDirector sharedDirector].touchDispatcher removeDelegate: self];
+}
+
 
 #if DEBUG
 -(void) draw
@@ -108,11 +145,116 @@
 
 #pragma mark - Update
 
-- (void) update:(ccTime)delta
+
+-(void)afterStep {
+	// process collisions and result from callbacks called by the step
+}
+
+-(void)step:(ccTime)dt {
+	float32 frameTime = dt;
+	int stepsPerformed = 0;
+	while ( (frameTime > 0.0) && (stepsPerformed < MAXIMUM_NUMBER_OF_STEPS) ){
+		float32 deltaTime = std::min( frameTime, FIXED_TIMESTEP );
+		frameTime -= deltaTime;
+		if (frameTime < MINIMUM_TIMESTEP) {
+			deltaTime += frameTime;
+			frameTime = 0.0f;
+		}
+		_world->Step(deltaTime,VELOCITY_ITERATIONS,POSITION_ITERATIONS);
+		stepsPerformed++;
+		[self afterStep]; // process collisions and result from callbacks called by the step
+	}
+	_world->ClearForces ();
+}
+
+
+
+- (void) update:(ccTime) dt
 {
-    int velocityIterations = 8;
-    int positionIterations = 3;
-    _world->Step(delta, velocityIterations, positionIterations);
+    //It is recommended that a fixed time step is used with Box2D for stability
+	//of the simulation, however, we are using a variable time step here.
+	//You need to make an informed choice, the following URL is useful
+	//http://gafferongames.com/game-physics/fix-your-timestep/
+    
+	// Instruct the world to perform a single step of simulation. It is
+	// generally best to keep the time step and iterations fixed.
+    //	world->Step(dt, velocityIterations, positionIterations);
+	[self step:dt];
+    
+	//Iterate over the bodies in the physics world
+	for (b2Body* b = _world->GetBodyList(); b; b = b->GetNext())
+	{
+		if (b->GetUserData() != NULL) {
+			//Synchronize the AtlasSprites position and rotation with the corresponding body
+			CCSprite *myActor = (__bridge CCSprite*)b->GetUserData();
+			myActor.position = CGPointMake( b->GetPosition().x * PTM_RATIO, b->GetPosition().y * PTM_RATIO);
+			myActor.rotation = -1 * CC_RADIANS_TO_DEGREES(b->GetAngle());
+		}
+	}
+}
+
+
+#pragma mark - Touches 
+
+
+- (BOOL) ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event
+{
+    if (self.ballFlickState == GLBallFlickStateNone) {
+        
+        self.ball.physicsBody->SetLinearVelocity(b2Vec2(0.0f,0.0f));
+        self.ball.physicsBody->SetAngularVelocity(0);
+        
+        self.ballFlickState = GLBallFlickStateAiming;
+        self.ballOrigin = [Helper locationFromTouch: touch];
+    }
+    
+    return YES;
+}
+
+
+- (void) ccTouchMoved:(UITouch *)touch withEvent:(UIEvent *)event
+{
+    
+    CGFloat maxDistanceFromOrigin = 100;
+    CGFloat maxTouchDistanceFromOrigin = 300;
+    
+    if (self.ballFlickState == GLBallFlickStateAiming) {
+        CGPoint touchLocation = [Helper locationFromTouch: touch];
+        CGFloat distanceToOrigin = ccpDistance(self.ballOrigin, touchLocation);
+        CGPoint ballLocation = CGPointZero;
+        
+        if (distanceToOrigin > maxTouchDistanceFromOrigin) {
+            CGPoint normalized = ccpNormalize(ccpSub(touchLocation, self.ballOrigin));
+            ballLocation = ccpAdd(self.ballOrigin, ccpMult(normalized, maxDistanceFromOrigin));
+        }else{
+            CGFloat percent = distanceToOrigin/maxTouchDistanceFromOrigin;
+            CGFloat ballDistanceFromOrigin = maxDistanceFromOrigin * percent;
+            CGPoint normalized = ccpNormalize(ccpSub(touchLocation, self.ballOrigin));
+            ballLocation = ccpAdd(self.ballOrigin, ccpMult(normalized, ballDistanceFromOrigin));
+            
+            NSLog(@"%f", ballDistanceFromOrigin);
+        }
+        
+        self.ball.physicsBody->SetTransform([Helper toMeters:ballLocation], 0);
+        
+//        NSLog(@"%@", NSStringFromCGPoint(ballLocation));
+//        NSLog(@"%f", distanceToOrigin);
+    }
+}
+
+
+- (void) ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event
+{
+    if (self.ballFlickState == GLBallFlickStateAiming) {
+        self.ballFlickState = GLBallFlickStateNone;
+        
+        CGPoint touchLocation = [Helper locationFromTouch: touch];
+        CGPoint direction = ccpNeg(ccpNormalize(ccpSub(touchLocation, self.ballOrigin)));
+        CGFloat ballDistanceFromOrigin = ccpDistance(self.ball.position, self.ballOrigin);
+        CGFloat percentDistance = ballDistanceFromOrigin/100;
+        
+        self.ball.physicsBody->ApplyLinearImpulse(b2Vec2(300*direction.x*percentDistance, 300*direction.y*percentDistance), self.ball.physicsBody->GetWorldCenter());
+    }
 }
 
 
@@ -124,10 +266,8 @@
     Ball *ball = [Ball ballWithWorld: _world position: [CCDirector sharedDirector].screenCenter];
     [self addChild: ball];
     self.ball = ball;
+    self.ball.physicsBody->SetLinearDamping(0.1);
 }
-
-
-
 
 
 @end
