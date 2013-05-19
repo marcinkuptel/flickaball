@@ -12,7 +12,7 @@
 
 @implementation GameplayScene
 
-- (id) init
+- (id) initWithLevelSpecification: (LevelSpecification*) specification
 {
     self = [super init];
     if (self) {

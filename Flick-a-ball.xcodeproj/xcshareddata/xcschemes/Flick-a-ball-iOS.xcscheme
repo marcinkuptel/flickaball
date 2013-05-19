@@ -28,6 +28,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "091A916C1747FE060014B8A0"
+               BuildableName = "Flick-a-ball tests.octest"
+               BlueprintName = "Flick-a-ball tests"
+               ReferencedContainer = "container:Flick-a-ball.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

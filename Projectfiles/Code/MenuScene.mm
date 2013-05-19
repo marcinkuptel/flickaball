@@ -7,8 +7,18 @@
 //
 
 #import "MenuScene.h"
-
+#import "MenuLayer.h"
 
 @implementation MenuScene
+
+- (id) init
+{
+    self = [super init];
+    if (self) {
+        _menuLayer = [[MenuLayer alloc] init];
+        [self addChild: _menuLayer];
+    }
+    return self;
+}
 
 @end

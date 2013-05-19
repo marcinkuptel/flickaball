@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		091A916F1747FE060014B8A0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091A916E1747FE060014B8A0 /* SenTestingKit.framework */; };
+		091A91711747FE060014B8A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091A91701747FE060014B8A0 /* UIKit.framework */; };
+		091A91731747FE060014B8A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091A91721747FE060014B8A0 /* Foundation.framework */; };
+		091A91791747FE060014B8A0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 091A91771747FE060014B8A0 /* InfoPlist.strings */; };
+		091A917C1747FE060014B8A0 /* Flick_a_ball_tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 091A917B1747FE060014B8A0 /* Flick_a_ball_tests.m */; };
+		091A91891747FF260014B8A0 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 091A91821747FF260014B8A0 /* libOCMock.a */; };
 		0932162717418CAD0066CBB5 /* BodySprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0932161D17418CAD0066CBB5 /* BodySprite.mm */; };
 		0932162817418CAD0066CBB5 /* ContactListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0932162017418CAD0066CBB5 /* ContactListener.mm */; };
 		0932162917418CAD0066CBB5 /* GB2ShapeCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0932162217418CAD0066CBB5 /* GB2ShapeCache.mm */; };
@@ -23,6 +29,19 @@
 		09A173EB1742D055000AD779 /* gameplayLayer-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A173E91742D055000AD779 /* gameplayLayer-ipadhd.png */; };
 		09A173EE1742D1C1000AD779 /* physics-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09A173EC1742D1C1000AD779 /* physics-ipad.plist */; };
 		09A173EF1742D1C1000AD779 /* physics-ipadhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09A173ED1742D1C1000AD779 /* physics-ipadhd.plist */; };
+		09A181CD1748E1BB0020AAFC /* BallLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09A181CC1748E1BB0020AAFC /* BallLayer.mm */; };
+		09A181D117491C7F0020AAFC /* BoardLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A181D017491C7F0020AAFC /* BoardLayer.m */; };
+		09A181D5174927AF0020AAFC /* LevelLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09A181D4174927AF0020AAFC /* LevelLoader.mm */; };
+		09A181D81749282F0020AAFC /* Levels1-10.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09A181D71749282F0020AAFC /* Levels1-10.plist */; };
+		09A181DB17492A3B0020AAFC /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09A181D917492A3B0020AAFC /* DataModel.xcdatamodeld */; };
+		09A181DE17492BC00020AAFC /* LevelSpecification.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09A181DD17492BC00020AAFC /* LevelSpecification.mm */; };
+		09A181E117492CA00020AAFC /* MenuScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09A181E017492CA00020AAFC /* MenuScene.mm */; };
+		09A181E5174935160020AAFC /* MenuLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09A181E4174935160020AAFC /* MenuLayer.mm */; };
+		09A181EB1749381B0020AAFC /* MenuFont-ipad.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 09A181E71749381B0020AAFC /* MenuFont-ipad.fnt */; };
+		09A181EC1749381B0020AAFC /* MenuFont-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A181E81749381B0020AAFC /* MenuFont-ipad.png */; };
+		09A181ED1749381B0020AAFC /* MenuFont-ipadhd.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 09A181E91749381B0020AAFC /* MenuFont-ipadhd.fnt */; };
+		09A181EE1749381B0020AAFC /* MenuFont-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A181EA1749381B0020AAFC /* MenuFont-ipadhd.png */; };
+		09A181F817493ADC0020AAFC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09A181FA17493ADC0020AAFC /* Localizable.strings */; };
 		DC21B88B1511078F00FD4891 /* fps_images-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B8881511078F00FD4891 /* fps_images-hd.png */; };
 		DC21B88C1511078F00FD4891 /* fps_images-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B8891511078F00FD4891 /* fps_images-ipadhd.png */; };
 		DC21B88D1511078F00FD4891 /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B88A1511078F00FD4891 /* fps_images.png */; };
@@ -64,7 +83,33 @@
 		DCF95CD413A97EC500AE3B80 /* libkobold2d-mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF95CCB13A97EC500AE3B80 /* libkobold2d-mac.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		091A918C174804140014B8A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCC1A0D813A94EC0005BD75D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCC1A0E213A94ED5005BD75D;
+			remoteInfo = "Flick-a-ball-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		091A916D1747FE060014B8A0 /* Flick-a-ball tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flick-a-ball tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		091A916E1747FE060014B8A0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		091A91701747FE060014B8A0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		091A91721747FE060014B8A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		091A91761747FE060014B8A0 /* Flick-a-ball tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Flick-a-ball tests-Info.plist"; sourceTree = "<group>"; };
+		091A91781747FE060014B8A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		091A917A1747FE060014B8A0 /* Flick_a_ball_tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Flick_a_ball_tests.h; sourceTree = "<group>"; };
+		091A917B1747FE060014B8A0 /* Flick_a_ball_tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Flick_a_ball_tests.m; sourceTree = "<group>"; };
+		091A917D1747FE060014B8A0 /* Flick-a-ball tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Flick-a-ball tests-Prefix.pch"; sourceTree = "<group>"; };
+		091A91821747FF260014B8A0 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = "External libraries/OCMock/libOCMock.a"; sourceTree = "<group>"; };
+		091A91831747FF260014B8A0 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+OCMAdditions.h"; path = "External libraries/OCMock/NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		091A91841747FF260014B8A0 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMArg.h; path = "External libraries/OCMock/OCMArg.h"; sourceTree = "<group>"; };
+		091A91851747FF260014B8A0 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMConstraint.h; path = "External libraries/OCMock/OCMConstraint.h"; sourceTree = "<group>"; };
+		091A91861747FF260014B8A0 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMock.h; path = "External libraries/OCMock/OCMock.h"; sourceTree = "<group>"; };
+		091A91871747FF260014B8A0 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMockObject.h; path = "External libraries/OCMock/OCMockObject.h"; sourceTree = "<group>"; };
+		091A91881747FF260014B8A0 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMockRecorder.h; path = "External libraries/OCMock/OCMockRecorder.h"; sourceTree = "<group>"; };
 		0932161C17418CAD0066CBB5 /* BodySprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BodySprite.h; path = Code/Base/BodySprite.h; sourceTree = "<group>"; };
 		0932161D17418CAD0066CBB5 /* BodySprite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BodySprite.mm; path = Code/Base/BodySprite.mm; sourceTree = "<group>"; };
 		0932161E17418CAD0066CBB5 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Code/Base/Constants.h; sourceTree = "<group>"; };
@@ -92,6 +137,33 @@
 		09A173E91742D055000AD779 /* gameplayLayer-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gameplayLayer-ipadhd.png"; path = "Graphics/retina/gameplayLayer-ipadhd.png"; sourceTree = "<group>"; };
 		09A173EC1742D1C1000AD779 /* physics-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "physics-ipad.plist"; path = "Physics/physics-ipad.plist"; sourceTree = "<group>"; };
 		09A173ED1742D1C1000AD779 /* physics-ipadhd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "physics-ipadhd.plist"; path = "Physics/physics-ipadhd.plist"; sourceTree = "<group>"; };
+		09A181CB1748E1BB0020AAFC /* BallLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BallLayer.h; path = Code/BallLayer.h; sourceTree = "<group>"; };
+		09A181CC1748E1BB0020AAFC /* BallLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BallLayer.mm; path = Code/BallLayer.mm; sourceTree = "<group>"; };
+		09A181CF17491C7F0020AAFC /* BoardLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoardLayer.h; path = Code/BoardLayer.h; sourceTree = "<group>"; };
+		09A181D017491C7F0020AAFC /* BoardLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoardLayer.m; path = Code/BoardLayer.m; sourceTree = "<group>"; };
+		09A181D3174927AF0020AAFC /* LevelLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelLoader.h; path = Code/LevelLoader.h; sourceTree = "<group>"; };
+		09A181D4174927AF0020AAFC /* LevelLoader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LevelLoader.mm; path = Code/LevelLoader.mm; sourceTree = "<group>"; };
+		09A181D71749282F0020AAFC /* Levels1-10.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Levels1-10.plist"; path = "Levels/Levels1-10.plist"; sourceTree = "<group>"; };
+		09A181DA17492A3B0020AAFC /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		09A181DC17492BBF0020AAFC /* LevelSpecification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelSpecification.h; path = Code/LevelSpecification.h; sourceTree = "<group>"; };
+		09A181DD17492BC00020AAFC /* LevelSpecification.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LevelSpecification.mm; path = Code/LevelSpecification.mm; sourceTree = "<group>"; };
+		09A181DF17492CA00020AAFC /* MenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuScene.h; path = Code/MenuScene.h; sourceTree = "<group>"; };
+		09A181E017492CA00020AAFC /* MenuScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MenuScene.mm; path = Code/MenuScene.mm; sourceTree = "<group>"; };
+		09A181E3174935160020AAFC /* MenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuLayer.h; path = Code/MenuLayer.h; sourceTree = "<group>"; };
+		09A181E4174935160020AAFC /* MenuLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MenuLayer.mm; path = Code/MenuLayer.mm; sourceTree = "<group>"; };
+		09A181E71749381B0020AAFC /* MenuFont-ipad.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "MenuFont-ipad.fnt"; path = "Fonts/MenuFont-ipad.fnt"; sourceTree = "<group>"; };
+		09A181E81749381B0020AAFC /* MenuFont-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MenuFont-ipad.png"; path = "Fonts/MenuFont-ipad.png"; sourceTree = "<group>"; };
+		09A181E91749381B0020AAFC /* MenuFont-ipadhd.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "MenuFont-ipadhd.fnt"; path = "Fonts/MenuFont-ipadhd.fnt"; sourceTree = "<group>"; };
+		09A181EA1749381B0020AAFC /* MenuFont-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MenuFont-ipadhd.png"; path = "Fonts/MenuFont-ipadhd.png"; sourceTree = "<group>"; };
+		09A181F217493A360020AAFC /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		09A181F317493A360020AAFC /* da */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = da; path = da.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		09A181F417493A370020AAFC /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		09A181F517493A510020AAFC /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		09A181F617493A510020AAFC /* pl */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = pl; path = pl.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		09A181F717493A510020AAFC /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		09A181F917493ADC0020AAFC /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		09A181FB17493AED0020AAFC /* da */ = {isa = PBXFileReference; lastKnownFileType = file; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		09A181FC17493AED0020AAFC /* pl */ = {isa = PBXFileReference; lastKnownFileType = file; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DC21B8881511078F00FD4891 /* fps_images-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fps_images-hd.png"; sourceTree = "<group>"; };
 		DC21B8891511078F00FD4891 /* fps_images-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fps_images-ipadhd.png"; sourceTree = "<group>"; };
 		DC21B88A1511078F00FD4891 /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fps_images.png; sourceTree = "<group>"; };
@@ -144,6 +216,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		091A91691747FE060014B8A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				091A916F1747FE060014B8A0 /* SenTestingKit.framework in Frameworks */,
+				091A91711747FE060014B8A0 /* UIKit.framework in Frameworks */,
+				091A91731747FE060014B8A0 /* Foundation.framework in Frameworks */,
+				091A91891747FF260014B8A0 /* libOCMock.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCC1A0E013A94ED5005BD75D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -178,6 +261,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		091A91741747FE060014B8A0 /* Flick-a-ball tests */ = {
+			isa = PBXGroup;
+			children = (
+				091A91811747FEC80014B8A0 /* OCMock */,
+				091A917A1747FE060014B8A0 /* Flick_a_ball_tests.h */,
+				091A917B1747FE060014B8A0 /* Flick_a_ball_tests.m */,
+				091A91751747FE060014B8A0 /* Supporting Files */,
+			);
+			path = "Flick-a-ball tests";
+			sourceTree = "<group>";
+		};
+		091A91751747FE060014B8A0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				091A91761747FE060014B8A0 /* Flick-a-ball tests-Info.plist */,
+				091A91771747FE060014B8A0 /* InfoPlist.strings */,
+				091A917D1747FE060014B8A0 /* Flick-a-ball tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		091A91811747FEC80014B8A0 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				091A91821747FF260014B8A0 /* libOCMock.a */,
+				091A91831747FF260014B8A0 /* NSNotificationCenter+OCMAdditions.h */,
+				091A91841747FF260014B8A0 /* OCMArg.h */,
+				091A91851747FF260014B8A0 /* OCMConstraint.h */,
+				091A91861747FF260014B8A0 /* OCMock.h */,
+				091A91871747FF260014B8A0 /* OCMockObject.h */,
+				091A91881747FF260014B8A0 /* OCMockRecorder.h */,
+			);
+			name = OCMock;
+			sourceTree = "<group>";
+		};
 		0932161B17418C0C0066CBB5 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,12 +319,15 @@
 		0932162C17418F530066CBB5 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				0932162D17418FCB0066CBB5 /* GameplayScene */,
+				09A181C61748D9B60020AAFC /* Options Scene */,
+				09A181C51748D9700020AAFC /* Level Selection Scene */,
+				09A181C41748D9640020AAFC /* Menu Scene */,
+				0932162D17418FCB0066CBB5 /* Gameplay Scene */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
 		};
-		0932162D17418FCB0066CBB5 /* GameplayScene */ = {
+		0932162D17418FCB0066CBB5 /* Gameplay Scene */ = {
 			isa = PBXGroup;
 			children = (
 				09A173E01742BECE000AD779 /* Objects */,
@@ -214,16 +335,14 @@
 				0932162E174190070066CBB5 /* GameplayScene.h */,
 				0932162F174190070066CBB5 /* GameplayScene.mm */,
 			);
-			name = GameplayScene;
+			name = "Gameplay Scene";
 			sourceTree = "<group>";
 		};
 		09321631174191FA0066CBB5 /* Layers */ = {
 			isa = PBXGroup;
 			children = (
-				093216321741924E0066CBB5 /* GameplayLayer.h */,
-				093216331741924E0066CBB5 /* GameplayLayer.mm */,
-				093216361741939C0066CBB5 /* BackgroundLayer.h */,
-				093216371741939C0066CBB5 /* BackgroundLayer.mm */,
+				09A181C81748DB7B0020AAFC /* Background Layer */,
+				09A181C71748DB6E0020AAFC /* Gameplay Layer */,
 			);
 			name = Layers;
 			sourceTree = "<group>";
@@ -273,6 +392,115 @@
 			name = Objects;
 			sourceTree = "<group>";
 		};
+		09A181C41748D9640020AAFC /* Menu Scene */ = {
+			isa = PBXGroup;
+			children = (
+				09A181E2174934F70020AAFC /* Layers */,
+				09A181DF17492CA00020AAFC /* MenuScene.h */,
+				09A181E017492CA00020AAFC /* MenuScene.mm */,
+			);
+			name = "Menu Scene";
+			sourceTree = "<group>";
+		};
+		09A181C51748D9700020AAFC /* Level Selection Scene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Level Selection Scene";
+			sourceTree = "<group>";
+		};
+		09A181C61748D9B60020AAFC /* Options Scene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Options Scene";
+			sourceTree = "<group>";
+		};
+		09A181C71748DB6E0020AAFC /* Gameplay Layer */ = {
+			isa = PBXGroup;
+			children = (
+				09A181C91748DB840020AAFC /* Board Layer */,
+				09A181CA1748DB8C0020AAFC /* Ball Layer */,
+				093216321741924E0066CBB5 /* GameplayLayer.h */,
+				093216331741924E0066CBB5 /* GameplayLayer.mm */,
+			);
+			name = "Gameplay Layer";
+			sourceTree = "<group>";
+		};
+		09A181C81748DB7B0020AAFC /* Background Layer */ = {
+			isa = PBXGroup;
+			children = (
+				093216361741939C0066CBB5 /* BackgroundLayer.h */,
+				093216371741939C0066CBB5 /* BackgroundLayer.mm */,
+			);
+			name = "Background Layer";
+			sourceTree = "<group>";
+		};
+		09A181C91748DB840020AAFC /* Board Layer */ = {
+			isa = PBXGroup;
+			children = (
+				09A181CF17491C7F0020AAFC /* BoardLayer.h */,
+				09A181D017491C7F0020AAFC /* BoardLayer.m */,
+			);
+			name = "Board Layer";
+			sourceTree = "<group>";
+		};
+		09A181CA1748DB8C0020AAFC /* Ball Layer */ = {
+			isa = PBXGroup;
+			children = (
+				09A181CB1748E1BB0020AAFC /* BallLayer.h */,
+				09A181CC1748E1BB0020AAFC /* BallLayer.mm */,
+			);
+			name = "Ball Layer";
+			sourceTree = "<group>";
+		};
+		09A181D21749278B0020AAFC /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				09A181D3174927AF0020AAFC /* LevelLoader.h */,
+				09A181D4174927AF0020AAFC /* LevelLoader.mm */,
+				09A181DC17492BBF0020AAFC /* LevelSpecification.h */,
+				09A181DD17492BC00020AAFC /* LevelSpecification.mm */,
+			);
+			name = Infrastructure;
+			sourceTree = "<group>";
+		};
+		09A181D6174927C40020AAFC /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				09A181D71749282F0020AAFC /* Levels1-10.plist */,
+			);
+			name = Levels;
+			sourceTree = "<group>";
+		};
+		09A181E2174934F70020AAFC /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				09A181E3174935160020AAFC /* MenuLayer.h */,
+				09A181E4174935160020AAFC /* MenuLayer.mm */,
+			);
+			name = Layers;
+			sourceTree = "<group>";
+		};
+		09A181E6174937600020AAFC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				09A181E71749381B0020AAFC /* MenuFont-ipad.fnt */,
+				09A181E81749381B0020AAFC /* MenuFont-ipad.png */,
+				09A181E91749381B0020AAFC /* MenuFont-ipadhd.fnt */,
+				09A181EA1749381B0020AAFC /* MenuFont-ipadhd.png */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		09A181EF174939890020AAFC /* Languages */ = {
+			isa = PBXGroup;
+			children = (
+				09A181FA17493ADC0020AAFC /* Localizable.strings */,
+			);
+			name = Languages;
+			sourceTree = "<group>";
+		};
 		DCC1A0D613A94EC0005BD75D = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +508,7 @@
 				DCC1A0F713A94ED5005BD75D /* Projectfiles-iOS */,
 				DCC1A26413A94EE6005BD75D /* Projectfiles-Mac */,
 				DCFA90ED13B4F6A0009DD35A /* BuildSettings */,
+				091A91741747FE060014B8A0 /* Flick-a-ball tests */,
 				DCC1A0E613A94ED5005BD75D /* Frameworks */,
 				DCC1A0E413A94ED5005BD75D /* Products */,
 			);
@@ -290,6 +519,7 @@
 			children = (
 				DCC1A0E313A94ED5005BD75D /* Flick-a-ball-iOS.app */,
 				DCC1A25A13A94EE6005BD75D /* Flick-a-ball-Mac.app */,
+				091A916D1747FE060014B8A0 /* Flick-a-ball tests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -297,6 +527,9 @@
 		DCC1A0E613A94ED5005BD75D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				091A916E1747FE060014B8A0 /* SenTestingKit.framework */,
+				091A91701747FE060014B8A0 /* UIKit.framework */,
+				091A91721747FE060014B8A0 /* Foundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -360,7 +593,9 @@
 		DCC1A38C13A94F1A005BD75D /* Projectfiles */ = {
 			isa = PBXGroup;
 			children = (
+				09A181D917492A3B0020AAFC /* DataModel.xcdatamodeld */,
 				0932161B17418C0C0066CBB5 /* Base */,
+				09A181D21749278B0020AAFC /* Infrastructure */,
 				0932162C17418F530066CBB5 /* Scenes */,
 				DCC1A38D13A94F1A005BD75D /* AppDelegate.h */,
 				DCC1A38E13A94F1A005BD75D /* AppDelegate.m */,
@@ -373,6 +608,9 @@
 		DCC1A39413A94F1A005BD75D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				09A181EF174939890020AAFC /* Languages */,
+				09A181E6174937600020AAFC /* Fonts */,
+				09A181D6174927C40020AAFC /* Levels */,
 				0932163D174196CE0066CBB5 /* Physics */,
 				0932163C174196C50066CBB5 /* Graphics */,
 				DCC1A39513A94F1A005BD75D /* config.lua */,
@@ -406,6 +644,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		091A916C1747FE060014B8A0 /* Flick-a-ball tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 091A91801747FE060014B8A0 /* Build configuration list for PBXNativeTarget "Flick-a-ball tests" */;
+			buildPhases = (
+				091A91681747FE060014B8A0 /* Sources */,
+				091A91691747FE060014B8A0 /* Frameworks */,
+				091A916A1747FE060014B8A0 /* Resources */,
+				091A916B1747FE060014B8A0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				091A918D174804140014B8A0 /* PBXTargetDependency */,
+			);
+			name = "Flick-a-ball tests";
+			productName = "Flick-a-ball tests";
+			productReference = 091A916D1747FE060014B8A0 /* Flick-a-ball tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		DCC1A0E213A94ED5005BD75D /* Flick-a-ball-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCC1A25313A94ED7005BD75D /* Build configuration list for PBXNativeTarget "Flick-a-ball-iOS" */;
@@ -413,6 +670,7 @@
 				DCC1A0DF13A94ED5005BD75D /* Sources */,
 				DCC1A0E013A94ED5005BD75D /* Frameworks */,
 				DCC1A0E113A94ED5005BD75D /* Resources */,
+				09A181CE1748FF590020AAFC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -455,6 +713,8 @@
 			knownRegions = (
 				en,
 				English,
+				da,
+				pl,
 			);
 			mainGroup = DCC1A0D613A94EC0005BD75D;
 			productRefGroup = DCC1A0E413A94ED5005BD75D /* Products */;
@@ -463,11 +723,20 @@
 			targets = (
 				DCC1A0E213A94ED5005BD75D /* Flick-a-ball-iOS */,
 				DCC1A25913A94EE6005BD75D /* Flick-a-ball-Mac */,
+				091A916C1747FE060014B8A0 /* Flick-a-ball tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		091A916A1747FE060014B8A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				091A91791747FE060014B8A0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCC1A0E113A94ED5005BD75D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -491,6 +760,12 @@
 				09A173EB1742D055000AD779 /* gameplayLayer-ipadhd.png in Resources */,
 				09A173EE1742D1C1000AD779 /* physics-ipad.plist in Resources */,
 				09A173EF1742D1C1000AD779 /* physics-ipadhd.plist in Resources */,
+				09A181D81749282F0020AAFC /* Levels1-10.plist in Resources */,
+				09A181EB1749381B0020AAFC /* MenuFont-ipad.fnt in Resources */,
+				09A181EC1749381B0020AAFC /* MenuFont-ipad.png in Resources */,
+				09A181ED1749381B0020AAFC /* MenuFont-ipadhd.fnt in Resources */,
+				09A181EE1749381B0020AAFC /* MenuFont-ipadhd.png in Resources */,
+				09A181F817493ADC0020AAFC /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,7 +783,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		091A916B1747FE060014B8A0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		09A181CE1748FF590020AAFC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "appledoc --project-name Flick-a-ball --project-company \"Marcin Kuptel\" --company-id dk.marcinkuptel --output /Users/marcinkuptel/Desktop/docs --logformat xcode /Users/marcinkuptel/Kobold2D/Kobold2D-2.1.0/Flick-a-ball/Projectfiles/Code";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		091A91681747FE060014B8A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				091A917C1747FE060014B8A0 /* Flick_a_ball_tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCC1A0DF13A94ED5005BD75D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -525,6 +837,13 @@
 				093216381741939C0066CBB5 /* BackgroundLayer.mm in Sources */,
 				0932163B174194D10066CBB5 /* GLES-Render.mm in Sources */,
 				09A173E31742BF24000AD779 /* Ball.mm in Sources */,
+				09A181CD1748E1BB0020AAFC /* BallLayer.mm in Sources */,
+				09A181D117491C7F0020AAFC /* BoardLayer.m in Sources */,
+				09A181D5174927AF0020AAFC /* LevelLoader.mm in Sources */,
+				09A181DB17492A3B0020AAFC /* DataModel.xcdatamodeld in Sources */,
+				09A181DE17492BC00020AAFC /* LevelSpecification.mm in Sources */,
+				09A181E117492CA00020AAFC /* MenuScene.mm in Sources */,
+				09A181E5174935160020AAFC /* MenuLayer.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,11 +858,42 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		091A918D174804140014B8A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCC1A0E213A94ED5005BD75D /* Flick-a-ball-iOS */;
+			targetProxy = 091A918C174804140014B8A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		091A91771747FE060014B8A0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				091A91781747FE060014B8A0 /* en */,
+				09A181F417493A370020AAFC /* da */,
+				09A181F717493A510020AAFC /* pl */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		09A181FA17493ADC0020AAFC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09A181F917493ADC0020AAFC /* en */,
+				09A181FB17493AED0020AAFC /* da */,
+				09A181FC17493AED0020AAFC /* pl */,
+			);
+			name = Localizable.strings;
+			path = Languages;
+			sourceTree = "<group>";
+		};
 		DCC1A26713A94EE6005BD75D /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DCC1A26813A94EE6005BD75D /* English */,
+				09A181F217493A360020AAFC /* da */,
+				09A181F517493A510020AAFC /* pl */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -552,6 +902,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				DCC1A26B13A94EE6005BD75D /* English */,
+				09A181F317493A360020AAFC /* da */,
+				09A181F617493A510020AAFC /* pl */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -559,6 +911,89 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		091A917E1747FE060014B8A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Flick-a-ball-iOS.app/Flick-a-ball-iOS";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flick-a-ball tests/Flick-a-ball tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Flick-a-ball tests/Flick-a-ball tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Flick-a-ball tests/External libraries/OCMock\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		091A917F1747FE060014B8A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Flick-a-ball-iOS.app/Flick-a-ball-iOS";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flick-a-ball tests/Flick-a-ball tests-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Flick-a-ball tests/Flick-a-ball tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Flick-a-ball tests/External libraries/OCMock\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		DCC1A0DD13A94EC0005BD75D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -576,6 +1011,7 @@
 			baseConfigurationReference = DCFA90EF13B4F6F7009DD35A /* BuildSettings-Debug-iOS.xcconfig */;
 			buildSettings = {
 				GCC_PREFIX_HEADER = "Projectfiles/Code/Prefix-iOS.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 			};
 			name = Debug;
 		};
@@ -584,6 +1020,7 @@
 			baseConfigurationReference = DCFA90F013B4F811009DD35A /* BuildSettings-Release-iOS.xcconfig */;
 			buildSettings = {
 				GCC_PREFIX_HEADER = "Projectfiles/Code/Prefix-iOS.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 			};
 			name = Release;
 		};
@@ -604,6 +1041,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		091A91801747FE060014B8A0 /* Build configuration list for PBXNativeTarget "Flick-a-ball tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				091A917E1747FE060014B8A0 /* Debug */,
+				091A917F1747FE060014B8A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DCC1A0DB13A94EC0005BD75D /* Build configuration list for PBXProject "Flick-a-ball" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -632,6 +1078,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		09A181D917492A3B0020AAFC /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				09A181DA17492A3B0020AAFC /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 09A181DA17492A3B0020AAFC /* DataModel.xcdatamodel */;
+			name = DataModel.xcdatamodeld;
+			path = Resources/DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DCC1A0D813A94EC0005BD75D /* Project object */;
 }

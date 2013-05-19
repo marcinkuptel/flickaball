@@ -15,14 +15,17 @@
 #import "PhysicsSprite.h"
 #import "GB2ShapeCache.h"
 
+/**
+ BodySprite
+ */
 @interface BodySprite : PhysicsSprite 
 {
 }
 
 /**
  * Creates a new shape
- * @param shapeName: Name of the shape and sprite
- * @param inWorld: Pointer to the world object to add the sprite to
+ * @param shapeName Name of the shape and sprite
+ * @param world Pointer to the world object to add the sprite to
  * @return BodySprite object
  */
 -(id) initWithShape:(NSString*)shapeName inWorld:(b2World*)world;
