@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@class LevelSpecification;
+
 @interface LevelLoader : NSObject
+
++ (id) sharedLoader;
+
+- (NSUInteger) numberOfLevels;
+- (LevelSpecification*) levelSpecificationAtIndex: (NSUInteger) index;
 
 @end

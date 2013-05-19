@@ -42,6 +42,8 @@
 		09A181ED1749381B0020AAFC /* MenuFont-ipadhd.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 09A181E91749381B0020AAFC /* MenuFont-ipadhd.fnt */; };
 		09A181EE1749381B0020AAFC /* MenuFont-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A181EA1749381B0020AAFC /* MenuFont-ipadhd.png */; };
 		09A181F817493ADC0020AAFC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09A181FA17493ADC0020AAFC /* Localizable.strings */; };
+		09A18201174981CF0020AAFC /* ObjectRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A18200174981CF0020AAFC /* ObjectRepository.m */; };
+		09A18204174982040020AAFC /* ObjectConstructor.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A18203174982040020AAFC /* ObjectConstructor.m */; };
 		DC21B88B1511078F00FD4891 /* fps_images-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B8881511078F00FD4891 /* fps_images-hd.png */; };
 		DC21B88C1511078F00FD4891 /* fps_images-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B8891511078F00FD4891 /* fps_images-ipadhd.png */; };
 		DC21B88D1511078F00FD4891 /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B88A1511078F00FD4891 /* fps_images.png */; };
@@ -164,6 +166,10 @@
 		09A181F917493ADC0020AAFC /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		09A181FB17493AED0020AAFC /* da */ = {isa = PBXFileReference; lastKnownFileType = file; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
 		09A181FC17493AED0020AAFC /* pl */ = {isa = PBXFileReference; lastKnownFileType = file; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		09A181FF174981CF0020AAFC /* ObjectRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjectRepository.h; path = Code/ObjectRepository.h; sourceTree = "<group>"; };
+		09A18200174981CF0020AAFC /* ObjectRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ObjectRepository.m; path = Code/ObjectRepository.m; sourceTree = "<group>"; };
+		09A18202174982040020AAFC /* ObjectConstructor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjectConstructor.h; path = Code/ObjectConstructor.h; sourceTree = "<group>"; };
+		09A18203174982040020AAFC /* ObjectConstructor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ObjectConstructor.m; path = Code/ObjectConstructor.m; sourceTree = "<group>"; };
 		DC21B8881511078F00FD4891 /* fps_images-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fps_images-hd.png"; sourceTree = "<group>"; };
 		DC21B8891511078F00FD4891 /* fps_images-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fps_images-ipadhd.png"; sourceTree = "<group>"; };
 		DC21B88A1511078F00FD4891 /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fps_images.png; sourceTree = "<group>"; };
@@ -457,10 +463,8 @@
 		09A181D21749278B0020AAFC /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
-				09A181D3174927AF0020AAFC /* LevelLoader.h */,
-				09A181D4174927AF0020AAFC /* LevelLoader.mm */,
-				09A181DC17492BBF0020AAFC /* LevelSpecification.h */,
-				09A181DD17492BC00020AAFC /* LevelSpecification.mm */,
+				09A181FE174981B10020AAFC /* Levels */,
+				09A181FD174981AA0020AAFC /* Game objects */,
 			);
 			name = Infrastructure;
 			sourceTree = "<group>";
@@ -499,6 +503,28 @@
 				09A181FA17493ADC0020AAFC /* Localizable.strings */,
 			);
 			name = Languages;
+			sourceTree = "<group>";
+		};
+		09A181FD174981AA0020AAFC /* Game objects */ = {
+			isa = PBXGroup;
+			children = (
+				09A181FF174981CF0020AAFC /* ObjectRepository.h */,
+				09A18200174981CF0020AAFC /* ObjectRepository.m */,
+				09A18202174982040020AAFC /* ObjectConstructor.h */,
+				09A18203174982040020AAFC /* ObjectConstructor.m */,
+			);
+			name = "Game objects";
+			sourceTree = "<group>";
+		};
+		09A181FE174981B10020AAFC /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				09A181D3174927AF0020AAFC /* LevelLoader.h */,
+				09A181D4174927AF0020AAFC /* LevelLoader.mm */,
+				09A181DC17492BBF0020AAFC /* LevelSpecification.h */,
+				09A181DD17492BC00020AAFC /* LevelSpecification.mm */,
+			);
+			name = Levels;
 			sourceTree = "<group>";
 		};
 		DCC1A0D613A94EC0005BD75D = {
@@ -844,6 +870,8 @@
 				09A181DE17492BC00020AAFC /* LevelSpecification.mm in Sources */,
 				09A181E117492CA00020AAFC /* MenuScene.mm in Sources */,
 				09A181E5174935160020AAFC /* MenuLayer.mm in Sources */,
+				09A18201174981CF0020AAFC /* ObjectRepository.m in Sources */,
+				09A18204174982040020AAFC /* ObjectConstructor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

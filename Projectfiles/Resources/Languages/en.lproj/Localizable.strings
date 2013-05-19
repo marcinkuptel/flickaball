@@ -5,3 +5,12 @@
   Created by Marcin Kuptel on 19/05/13.
 
 */
+
+/*
+ Main menu
+ */
+
+"Play" = "Play";
+"Options" = "Options";
+"Achievements" = "Achievements";
+"Leaderboards" = "Leaderboards";
