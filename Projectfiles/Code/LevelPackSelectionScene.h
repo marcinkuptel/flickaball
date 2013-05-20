@@ -8,7 +8,7 @@
 
 #import "CCScrollLayer.h"
 
-@interface LevelPackSelectionScene : CCScene<CCScrollLayerDelegate> {
+@interface LevelPackSelectionScene : CCScene<CCScrollLayerDelegate, CCTouchOneByOneDelegate> {
     @private
     CCScrollLayer *_scrollLayer;
     NSArray *_levelPackSpecifications;

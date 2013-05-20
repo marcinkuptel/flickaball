@@ -8,6 +8,7 @@
 
 #import "MenuLayer.h"
 #import "LevelPackSelectionScene.h"
+#import "LevelLoader.h"
 
 #define MENU_FNT_FILE       @"MenuFont.fnt"
 
@@ -44,7 +45,8 @@
     CCLabelBMFont *playLabel = [[CCLabelBMFont alloc] initWithString: NSLocalizedString(@"Play", ) fntFile: fntFile];
     CCMenuItemLabel *playMenuItem = [[CCMenuItemLabel alloc] initWithLabel: playLabel block:^(id sender) {
         
-        LevelPackSelectionScene *levelPackSelection = [[LevelPackSelectionScene alloc] init];
+        NSArray *levelPackSpecifications = [[LevelLoader sharedLoader] levelPackSpecifications];
+        LevelPackSelectionScene *levelPackSelection = [[LevelPackSelectionScene alloc] initWithLevelPackSpecifications: levelPackSpecifications];
         [[CCDirector sharedDirector] replaceScene: levelPackSelection];
         
     }];

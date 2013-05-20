@@ -8,13 +8,18 @@
 
 #import "CCScrollLayer.h"
 
-@class LevelLoader;
+@class LevelSpecification;
 
+/**
+ Scene in which the user can browse levels included in the chosen
+ level pack.
+ */
 @interface LevelSelectionScene : CCScene<CCScrollLayerDelegate> {
+    @private
     CCScrollLayer *_scrollLayer;
-    LevelLoader *_levelLoader;
+    NSArray *_levelSpecifications;
 }
 
-- (id) initWithLevelLoader: (LevelLoader*) levelLoader;
+- (id) initWithLevelSpecifications: (NSArray*) levelSpecifications;
 
 @end

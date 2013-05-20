@@ -11,17 +11,6 @@
 
 @implementation LevelLoaderTests
 
-- (void) setUp
-{
-    [super setUp];
-}
-
-- (void) tearDown
-{
-    [super tearDown];
-}
-
-
 - (void) testLoadingLevelPackSpecifications
 {
     NSArray *specifications = [[LevelLoader sharedLoader] levelPackSpecifications];

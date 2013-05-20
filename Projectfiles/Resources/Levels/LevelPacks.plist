@@ -5,14 +5,20 @@
 	<dict>
 		<key>name</key>
 		<string>Level pack 1</string>
+		<key>levelsFilename</key>
+		<string>LevelPack1</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Level pack 2</string>
+		<key>levelsFilename</key>
+		<string>LevelPack2</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Level pack 3</string>
+		<key>levelsFilename</key>
+		<string>LevelPack3</string>
 	</dict>
 </array>
 </plist>

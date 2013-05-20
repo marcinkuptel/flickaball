@@ -11,6 +11,7 @@
 @interface LevelPackSpecification : NSObject
 
 @property (nonatomic, copy, readonly) NSString *levelPackName;
+@property (nonatomic, strong, readonly) NSArray *levelSpecifications;
 
 - (id) initWithDictionary: (NSDictionary*) dictionary;
 

@@ -5,4 +5,11 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+
+    // Cocos2D headers
+    #import "cocos2d.h"
+
+    // Kobold2D headers
+    #import "kobold2d.h"
+    #import "kkARCSupport.h"
 #endif

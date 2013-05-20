@@ -15,6 +15,10 @@
 {
     self = [super init];
     if (self) {
+        CCLabelBMFont *levelPackName = [[CCLabelBMFont alloc] initWithString: levelPackSpecification.levelPackName
+                                                                     fntFile: @"MenuFont.fnt"];
+        levelPackName.position = self.boundingBoxCenter;
+        [self addChild: levelPackName];
         
     }
     return self;
