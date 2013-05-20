@@ -11,7 +11,6 @@
 		091A91711747FE060014B8A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091A91701747FE060014B8A0 /* UIKit.framework */; };
 		091A91731747FE060014B8A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091A91721747FE060014B8A0 /* Foundation.framework */; };
 		091A91791747FE060014B8A0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 091A91771747FE060014B8A0 /* InfoPlist.strings */; };
-		091A917C1747FE060014B8A0 /* Flick_a_ball_tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 091A917B1747FE060014B8A0 /* Flick_a_ball_tests.m */; };
 		091A91891747FF260014B8A0 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 091A91821747FF260014B8A0 /* libOCMock.a */; };
 		0932162717418CAD0066CBB5 /* BodySprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0932161D17418CAD0066CBB5 /* BodySprite.mm */; };
 		0932162817418CAD0066CBB5 /* ContactListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0932162017418CAD0066CBB5 /* ContactListener.mm */; };
@@ -22,6 +21,13 @@
 		093216341741924E0066CBB5 /* GameplayLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 093216331741924E0066CBB5 /* GameplayLayer.mm */; };
 		093216381741939C0066CBB5 /* BackgroundLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 093216371741939C0066CBB5 /* BackgroundLayer.mm */; };
 		0932163B174194D10066CBB5 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09321639174194D10066CBB5 /* GLES-Render.mm */; };
+		099B0E0E174A2D0E00525BA3 /* LevelSelectionScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 099B0E0D174A2D0E00525BA3 /* LevelSelectionScene.mm */; };
+		099B0E12174A558600525BA3 /* LevelPackSpecification.mm in Sources */ = {isa = PBXBuildFile; fileRef = 099B0E11174A558600525BA3 /* LevelPackSpecification.mm */; };
+		099B0E16174A57CD00525BA3 /* LevelPackSelectionScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 099B0E15174A57CD00525BA3 /* LevelPackSelectionScene.mm */; };
+		099B0E1A174A57ED00525BA3 /* LevelPackLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 099B0E19174A57ED00525BA3 /* LevelPackLayer.mm */; };
+		099B0E1F174A6B4700525BA3 /* LevelLoaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B0E1E174A6B4700525BA3 /* LevelLoaderTests.m */; };
+		099B0E20174A6BE500525BA3 /* LevelLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09A181D4174927AF0020AAFC /* LevelLoader.mm */; };
+		099B0E23174A6CB800525BA3 /* LevelPackSpecificationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 099B0E22174A6CB800525BA3 /* LevelPackSpecificationTests.m */; };
 		09A173E31742BF24000AD779 /* Ball.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09A173E21742BF24000AD779 /* Ball.mm */; };
 		09A173E61742D049000AD779 /* gameplayLayer-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09A173E41742D049000AD779 /* gameplayLayer-ipad.plist */; };
 		09A173E71742D049000AD779 /* gameplayLayer-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A173E51742D049000AD779 /* gameplayLayer-ipad.png */; };
@@ -32,7 +38,7 @@
 		09A181CD1748E1BB0020AAFC /* BallLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09A181CC1748E1BB0020AAFC /* BallLayer.mm */; };
 		09A181D117491C7F0020AAFC /* BoardLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A181D017491C7F0020AAFC /* BoardLayer.m */; };
 		09A181D5174927AF0020AAFC /* LevelLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09A181D4174927AF0020AAFC /* LevelLoader.mm */; };
-		09A181D81749282F0020AAFC /* Levels1-10.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09A181D71749282F0020AAFC /* Levels1-10.plist */; };
+		09A181D81749282F0020AAFC /* LevelPacks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09A181D71749282F0020AAFC /* LevelPacks.plist */; };
 		09A181DB17492A3B0020AAFC /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09A181D917492A3B0020AAFC /* DataModel.xcdatamodeld */; };
 		09A181DE17492BC00020AAFC /* LevelSpecification.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09A181DD17492BC00020AAFC /* LevelSpecification.mm */; };
 		09A181E117492CA00020AAFC /* MenuScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09A181E017492CA00020AAFC /* MenuScene.mm */; };
@@ -102,8 +108,6 @@
 		091A91721747FE060014B8A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		091A91761747FE060014B8A0 /* Flick-a-ball tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Flick-a-ball tests-Info.plist"; sourceTree = "<group>"; };
 		091A91781747FE060014B8A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		091A917A1747FE060014B8A0 /* Flick_a_ball_tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Flick_a_ball_tests.h; sourceTree = "<group>"; };
-		091A917B1747FE060014B8A0 /* Flick_a_ball_tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Flick_a_ball_tests.m; sourceTree = "<group>"; };
 		091A917D1747FE060014B8A0 /* Flick-a-ball tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Flick-a-ball tests-Prefix.pch"; sourceTree = "<group>"; };
 		091A91821747FF260014B8A0 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = "External libraries/OCMock/libOCMock.a"; sourceTree = "<group>"; };
 		091A91831747FF260014B8A0 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+OCMAdditions.h"; path = "External libraries/OCMock/NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
@@ -131,6 +135,18 @@
 		093216371741939C0066CBB5 /* BackgroundLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BackgroundLayer.mm; path = Code/BackgroundLayer.mm; sourceTree = "<group>"; };
 		09321639174194D10066CBB5 /* GLES-Render.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "GLES-Render.mm"; path = "Code/Base/GLES-Render.mm"; sourceTree = "<group>"; };
 		0932163A174194D10066CBB5 /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GLES-Render.h"; path = "Code/Base/GLES-Render.h"; sourceTree = "<group>"; };
+		099B0E0C174A2D0E00525BA3 /* LevelSelectionScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelSelectionScene.h; path = Code/LevelSelectionScene.h; sourceTree = "<group>"; };
+		099B0E0D174A2D0E00525BA3 /* LevelSelectionScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LevelSelectionScene.mm; path = Code/LevelSelectionScene.mm; sourceTree = "<group>"; };
+		099B0E10174A558600525BA3 /* LevelPackSpecification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelPackSpecification.h; path = Code/LevelPackSpecification.h; sourceTree = "<group>"; };
+		099B0E11174A558600525BA3 /* LevelPackSpecification.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LevelPackSpecification.mm; path = Code/LevelPackSpecification.mm; sourceTree = "<group>"; };
+		099B0E14174A57CD00525BA3 /* LevelPackSelectionScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelPackSelectionScene.h; path = Code/LevelPackSelectionScene.h; sourceTree = "<group>"; };
+		099B0E15174A57CD00525BA3 /* LevelPackSelectionScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LevelPackSelectionScene.mm; path = Code/LevelPackSelectionScene.mm; sourceTree = "<group>"; };
+		099B0E18174A57ED00525BA3 /* LevelPackLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelPackLayer.h; path = Code/LevelPackLayer.h; sourceTree = "<group>"; };
+		099B0E19174A57ED00525BA3 /* LevelPackLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LevelPackLayer.mm; path = Code/LevelPackLayer.mm; sourceTree = "<group>"; };
+		099B0E1D174A6B4700525BA3 /* LevelLoaderTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelLoaderTests.h; path = "Flick-a-ball tests/Tests/LevelLoaderTests.h"; sourceTree = SOURCE_ROOT; };
+		099B0E1E174A6B4700525BA3 /* LevelLoaderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LevelLoaderTests.m; path = "Flick-a-ball tests/Tests/LevelLoaderTests.m"; sourceTree = SOURCE_ROOT; };
+		099B0E21174A6CB800525BA3 /* LevelPackSpecificationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelPackSpecificationTests.h; path = Tests/LevelPackSpecificationTests.h; sourceTree = "<group>"; };
+		099B0E22174A6CB800525BA3 /* LevelPackSpecificationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LevelPackSpecificationTests.m; path = Tests/LevelPackSpecificationTests.m; sourceTree = "<group>"; };
 		09A173E11742BF24000AD779 /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ball.h; path = Code/Ball.h; sourceTree = "<group>"; };
 		09A173E21742BF24000AD779 /* Ball.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Ball.mm; path = Code/Ball.mm; sourceTree = "<group>"; };
 		09A173E41742D049000AD779 /* gameplayLayer-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "gameplayLayer-ipad.plist"; path = "Graphics/non-retina/gameplayLayer-ipad.plist"; sourceTree = "<group>"; };
@@ -145,7 +161,7 @@
 		09A181D017491C7F0020AAFC /* BoardLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoardLayer.m; path = Code/BoardLayer.m; sourceTree = "<group>"; };
 		09A181D3174927AF0020AAFC /* LevelLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelLoader.h; path = Code/LevelLoader.h; sourceTree = "<group>"; };
 		09A181D4174927AF0020AAFC /* LevelLoader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LevelLoader.mm; path = Code/LevelLoader.mm; sourceTree = "<group>"; };
-		09A181D71749282F0020AAFC /* Levels1-10.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Levels1-10.plist"; path = "Levels/Levels1-10.plist"; sourceTree = "<group>"; };
+		09A181D71749282F0020AAFC /* LevelPacks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = LevelPacks.plist; path = Levels/LevelPacks.plist; sourceTree = "<group>"; };
 		09A181DA17492A3B0020AAFC /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		09A181DC17492BBF0020AAFC /* LevelSpecification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelSpecification.h; path = Code/LevelSpecification.h; sourceTree = "<group>"; };
 		09A181DD17492BC00020AAFC /* LevelSpecification.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LevelSpecification.mm; path = Code/LevelSpecification.mm; sourceTree = "<group>"; };
@@ -163,9 +179,9 @@
 		09A181F517493A510020AAFC /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		09A181F617493A510020AAFC /* pl */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = pl; path = pl.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		09A181F717493A510020AAFC /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		09A181F917493ADC0020AAFC /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		09A181FB17493AED0020AAFC /* da */ = {isa = PBXFileReference; lastKnownFileType = file; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
-		09A181FC17493AED0020AAFC /* pl */ = {isa = PBXFileReference; lastKnownFileType = file; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		09A181F917493ADC0020AAFC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		09A181FB17493AED0020AAFC /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		09A181FC17493AED0020AAFC /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		09A181FF174981CF0020AAFC /* ObjectRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjectRepository.h; path = Code/ObjectRepository.h; sourceTree = "<group>"; };
 		09A18200174981CF0020AAFC /* ObjectRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ObjectRepository.m; path = Code/ObjectRepository.m; sourceTree = "<group>"; };
 		09A18202174982040020AAFC /* ObjectConstructor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjectConstructor.h; path = Code/ObjectConstructor.h; sourceTree = "<group>"; };
@@ -270,9 +286,8 @@
 		091A91741747FE060014B8A0 /* Flick-a-ball tests */ = {
 			isa = PBXGroup;
 			children = (
+				099B0E1C174A6B0B00525BA3 /* Tests */,
 				091A91811747FEC80014B8A0 /* OCMock */,
-				091A917A1747FE060014B8A0 /* Flick_a_ball_tests.h */,
-				091A917B1747FE060014B8A0 /* Flick_a_ball_tests.m */,
 				091A91751747FE060014B8A0 /* Supporting Files */,
 			);
 			path = "Flick-a-ball tests";
@@ -325,6 +340,8 @@
 		0932162C17418F530066CBB5 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				099B0E1B174A606400525BA3 /* Loading Scene */,
+				099B0E13174A57B200525BA3 /* Level Pack Selection Scene */,
 				09A181C61748D9B60020AAFC /* Options Scene */,
 				09A181C51748D9700020AAFC /* Level Selection Scene */,
 				09A181C41748D9640020AAFC /* Menu Scene */,
@@ -389,6 +406,50 @@
 			name = "non-retina";
 			sourceTree = "<group>";
 		};
+		099B0E0F174A538D00525BA3 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Layers;
+			sourceTree = "<group>";
+		};
+		099B0E13174A57B200525BA3 /* Level Pack Selection Scene */ = {
+			isa = PBXGroup;
+			children = (
+				099B0E17174A57D500525BA3 /* Layers */,
+				099B0E14174A57CD00525BA3 /* LevelPackSelectionScene.h */,
+				099B0E15174A57CD00525BA3 /* LevelPackSelectionScene.mm */,
+			);
+			name = "Level Pack Selection Scene";
+			sourceTree = "<group>";
+		};
+		099B0E17174A57D500525BA3 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				099B0E18174A57ED00525BA3 /* LevelPackLayer.h */,
+				099B0E19174A57ED00525BA3 /* LevelPackLayer.mm */,
+			);
+			name = Layers;
+			sourceTree = "<group>";
+		};
+		099B0E1B174A606400525BA3 /* Loading Scene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Loading Scene";
+			sourceTree = "<group>";
+		};
+		099B0E1C174A6B0B00525BA3 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				099B0E1D174A6B4700525BA3 /* LevelLoaderTests.h */,
+				099B0E1E174A6B4700525BA3 /* LevelLoaderTests.m */,
+				099B0E21174A6CB800525BA3 /* LevelPackSpecificationTests.h */,
+				099B0E22174A6CB800525BA3 /* LevelPackSpecificationTests.m */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
 		09A173E01742BECE000AD779 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
@@ -411,6 +472,9 @@
 		09A181C51748D9700020AAFC /* Level Selection Scene */ = {
 			isa = PBXGroup;
 			children = (
+				099B0E0F174A538D00525BA3 /* Layers */,
+				099B0E0C174A2D0E00525BA3 /* LevelSelectionScene.h */,
+				099B0E0D174A2D0E00525BA3 /* LevelSelectionScene.mm */,
 			);
 			name = "Level Selection Scene";
 			sourceTree = "<group>";
@@ -463,8 +527,8 @@
 		09A181D21749278B0020AAFC /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
-				09A181FE174981B10020AAFC /* Levels */,
-				09A181FD174981AA0020AAFC /* Game objects */,
+				09A181FE174981B10020AAFC /* Levels management */,
+				09A181FD174981AA0020AAFC /* Game objects management */,
 			);
 			name = Infrastructure;
 			sourceTree = "<group>";
@@ -472,7 +536,7 @@
 		09A181D6174927C40020AAFC /* Levels */ = {
 			isa = PBXGroup;
 			children = (
-				09A181D71749282F0020AAFC /* Levels1-10.plist */,
+				09A181D71749282F0020AAFC /* LevelPacks.plist */,
 			);
 			name = Levels;
 			sourceTree = "<group>";
@@ -505,7 +569,7 @@
 			name = Languages;
 			sourceTree = "<group>";
 		};
-		09A181FD174981AA0020AAFC /* Game objects */ = {
+		09A181FD174981AA0020AAFC /* Game objects management */ = {
 			isa = PBXGroup;
 			children = (
 				09A181FF174981CF0020AAFC /* ObjectRepository.h */,
@@ -513,18 +577,27 @@
 				09A18202174982040020AAFC /* ObjectConstructor.h */,
 				09A18203174982040020AAFC /* ObjectConstructor.m */,
 			);
-			name = "Game objects";
+			name = "Game objects management";
 			sourceTree = "<group>";
 		};
-		09A181FE174981B10020AAFC /* Levels */ = {
+		09A181FE174981B10020AAFC /* Levels management */ = {
 			isa = PBXGroup;
 			children = (
 				09A181D3174927AF0020AAFC /* LevelLoader.h */,
 				09A181D4174927AF0020AAFC /* LevelLoader.mm */,
 				09A181DC17492BBF0020AAFC /* LevelSpecification.h */,
 				09A181DD17492BC00020AAFC /* LevelSpecification.mm */,
+				099B0E10174A558600525BA3 /* LevelPackSpecification.h */,
+				099B0E11174A558600525BA3 /* LevelPackSpecification.mm */,
 			);
-			name = Levels;
+			name = "Levels management";
+			sourceTree = "<group>";
+		};
+		09A18205174982E80020AAFC /* Game objects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Game objects";
 			sourceTree = "<group>";
 		};
 		DCC1A0D613A94EC0005BD75D = {
@@ -634,6 +707,7 @@
 		DCC1A39413A94F1A005BD75D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				09A18205174982E80020AAFC /* Game objects */,
 				09A181EF174939890020AAFC /* Languages */,
 				09A181E6174937600020AAFC /* Fonts */,
 				09A181D6174927C40020AAFC /* Levels */,
@@ -786,7 +860,7 @@
 				09A173EB1742D055000AD779 /* gameplayLayer-ipadhd.png in Resources */,
 				09A173EE1742D1C1000AD779 /* physics-ipad.plist in Resources */,
 				09A173EF1742D1C1000AD779 /* physics-ipadhd.plist in Resources */,
-				09A181D81749282F0020AAFC /* Levels1-10.plist in Resources */,
+				09A181D81749282F0020AAFC /* LevelPacks.plist in Resources */,
 				09A181EB1749381B0020AAFC /* MenuFont-ipad.fnt in Resources */,
 				09A181EC1749381B0020AAFC /* MenuFont-ipad.png in Resources */,
 				09A181ED1749381B0020AAFC /* MenuFont-ipadhd.fnt in Resources */,
@@ -843,7 +917,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				091A917C1747FE060014B8A0 /* Flick_a_ball_tests.m in Sources */,
+				099B0E1F174A6B4700525BA3 /* LevelLoaderTests.m in Sources */,
+				099B0E20174A6BE500525BA3 /* LevelLoader.mm in Sources */,
+				099B0E23174A6CB800525BA3 /* LevelPackSpecificationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -872,6 +948,10 @@
 				09A181E5174935160020AAFC /* MenuLayer.mm in Sources */,
 				09A18201174981CF0020AAFC /* ObjectRepository.m in Sources */,
 				09A18204174982040020AAFC /* ObjectConstructor.m in Sources */,
+				099B0E0E174A2D0E00525BA3 /* LevelSelectionScene.mm in Sources */,
+				099B0E12174A558600525BA3 /* LevelPackSpecification.mm in Sources */,
+				099B0E16174A57CD00525BA3 /* LevelPackSelectionScene.mm in Sources */,
+				099B0E1A174A57ED00525BA3 /* LevelPackLayer.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

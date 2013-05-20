@@ -7,13 +7,14 @@
 //
 
 #import "LevelLoader.h"
-#import "LevelSpecification.h"
+#import "LevelPackSpecification.h"
 
-#define LEVELS_FILENAME             @"Levels"
+#define LEVEL_PACKS_FILENAME             @"LevelPacks"
 
 @interface LevelLoader ()
 
-@property (nonatomic, strong) NSString *levelsFilename;
+@property (nonatomic, strong) NSString *levelPacksFilename;
+@property (nonatomic, strong) NSArray *levelPackSpecifications;
 
 @end
 
@@ -24,32 +25,37 @@
     static LevelLoader *loader;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        loader = [[LevelLoader alloc] initWithLevelsFilename: LEVELS_FILENAME];
+        loader = [[LevelLoader alloc] initWithLevelPacksFilename: LEVEL_PACKS_FILENAME];
     });
     return loader;
 }
 
 
-- (id) initWithLevelsFilename: (NSString*) levelsFilename
+- (id) initWithLevelPacksFilename: (NSString*) levelPacksFilename
 {
     self = [super init];
     if (self) {
-        _levelsFilename = levelsFilename;
+        self.levelPacksFilename = levelPacksFilename;
+        self.levelPackSpecifications = [self levelPackSpecificationsWithFilename: levelPacksFilename];
     }
     return self;
 }
 
-#pragma mark - Public methods
-
-- (NSUInteger) numberOfLevels
+- (NSArray*) levelPackSpecificationsWithFilename: (NSString*) filename
 {
+    NSParameterAssert(filename);
     
+    NSString *path = [[NSBundle mainBundle] pathForResource: filename ofType: @"plist"];
+    NSArray *rawSpecifications = [NSArray arrayWithContentsOfFile: path];
+    
+    NSMutableArray *convertedSpecifications = [@[] mutableCopy];
+    LevelPackSpecification *levelPackSpecification = nil;
+    for (NSDictionary * rawSpecification in rawSpecifications) {
+        levelPackSpecification = [[LevelPackSpecification alloc] initWithDictionary: rawSpecification];
+        [convertedSpecifications addObject: levelPackSpecification];
+    }
+    return [NSArray arrayWithArray: convertedSpecifications];
 }
 
-
-- (LevelSpecification*) levelSpecificationAtIndex:(NSUInteger)index
-{
-    
-}
 
 @end

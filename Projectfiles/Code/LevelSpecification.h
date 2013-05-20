@@ -10,4 +10,6 @@
 
 @interface LevelSpecification : NSObject
 
+- (id) initWithDictionary: (NSDictionary*) dictionary;
+
 @end
