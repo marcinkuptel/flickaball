@@ -21,6 +21,19 @@
 		093216341741924E0066CBB5 /* GameplayLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 093216331741924E0066CBB5 /* GameplayLayer.mm */; };
 		093216381741939C0066CBB5 /* BackgroundLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 093216371741939C0066CBB5 /* BackgroundLayer.mm */; };
 		0932163B174194D10066CBB5 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09321639174194D10066CBB5 /* GLES-Render.mm */; };
+		094ADC8F1750C96700951374 /* LevelSpecificationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 094ADC8E1750C96700951374 /* LevelSpecificationTests.m */; };
+		094ADC94175120CD00951374 /* Level1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADC93175120CD00951374 /* Level1.plist */; };
+		094ADC96175120E700951374 /* Level2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADC95175120E700951374 /* Level2.plist */; };
+		094ADC98175121C600951374 /* Level3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADC97175121C600951374 /* Level3.plist */; };
+		094ADC9D1751228F00951374 /* Level3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADC991751228F00951374 /* Level3.plist */; };
+		094ADC9E1751228F00951374 /* Level4.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADC9A1751228F00951374 /* Level4.plist */; };
+		094ADC9F1751228F00951374 /* Level2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADC9B1751228F00951374 /* Level2.plist */; };
+		094ADCA01751228F00951374 /* Level1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADC9C1751228F00951374 /* Level1.plist */; };
+		094ADCA61751229C00951374 /* Level3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADCA11751229C00951374 /* Level3.plist */; };
+		094ADCA71751229C00951374 /* Level4.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADCA21751229C00951374 /* Level4.plist */; };
+		094ADCA81751229C00951374 /* Level5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADCA31751229C00951374 /* Level5.plist */; };
+		094ADCA91751229C00951374 /* Level2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADCA41751229C00951374 /* Level2.plist */; };
+		094ADCAA1751229C00951374 /* Level1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADCA51751229C00951374 /* Level1.plist */; };
 		099B0E0E174A2D0E00525BA3 /* LevelSelectionScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 099B0E0D174A2D0E00525BA3 /* LevelSelectionScene.mm */; };
 		099B0E12174A558600525BA3 /* LevelPackSpecification.mm in Sources */ = {isa = PBXBuildFile; fileRef = 099B0E11174A558600525BA3 /* LevelPackSpecification.mm */; };
 		099B0E16174A57CD00525BA3 /* LevelPackSelectionScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 099B0E15174A57CD00525BA3 /* LevelPackSelectionScene.mm */; };
@@ -144,6 +157,20 @@
 		093216371741939C0066CBB5 /* BackgroundLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BackgroundLayer.mm; path = Code/BackgroundLayer.mm; sourceTree = "<group>"; };
 		09321639174194D10066CBB5 /* GLES-Render.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "GLES-Render.mm"; path = "Code/Base/GLES-Render.mm"; sourceTree = "<group>"; };
 		0932163A174194D10066CBB5 /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GLES-Render.h"; path = "Code/Base/GLES-Render.h"; sourceTree = "<group>"; };
+		094ADC8D1750C96700951374 /* LevelSpecificationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelSpecificationTests.h; path = Tests/LevelSpecificationTests.h; sourceTree = "<group>"; };
+		094ADC8E1750C96700951374 /* LevelSpecificationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LevelSpecificationTests.m; path = Tests/LevelSpecificationTests.m; sourceTree = "<group>"; };
+		094ADC93175120CD00951374 /* Level1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level1.plist; path = Levels/LevelPack1/Level1.plist; sourceTree = "<group>"; };
+		094ADC95175120E700951374 /* Level2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level2.plist; path = Levels/LevelPack1/Level2.plist; sourceTree = "<group>"; };
+		094ADC97175121C600951374 /* Level3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level3.plist; path = Levels/LevelPack1/Level3.plist; sourceTree = "<group>"; };
+		094ADC991751228F00951374 /* Level3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level3.plist; path = Levels/LevelPack2/Level3.plist; sourceTree = "<group>"; };
+		094ADC9A1751228F00951374 /* Level4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level4.plist; path = Levels/LevelPack2/Level4.plist; sourceTree = "<group>"; };
+		094ADC9B1751228F00951374 /* Level2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level2.plist; path = Levels/LevelPack2/Level2.plist; sourceTree = "<group>"; };
+		094ADC9C1751228F00951374 /* Level1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level1.plist; path = Levels/LevelPack2/Level1.plist; sourceTree = "<group>"; };
+		094ADCA11751229C00951374 /* Level3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level3.plist; path = Levels/LevelPack3/Level3.plist; sourceTree = "<group>"; };
+		094ADCA21751229C00951374 /* Level4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level4.plist; path = Levels/LevelPack3/Level4.plist; sourceTree = "<group>"; };
+		094ADCA31751229C00951374 /* Level5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level5.plist; path = Levels/LevelPack3/Level5.plist; sourceTree = "<group>"; };
+		094ADCA41751229C00951374 /* Level2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level2.plist; path = Levels/LevelPack3/Level2.plist; sourceTree = "<group>"; };
+		094ADCA51751229C00951374 /* Level1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level1.plist; path = Levels/LevelPack3/Level1.plist; sourceTree = "<group>"; };
 		099B0E0C174A2D0E00525BA3 /* LevelSelectionScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelSelectionScene.h; path = Code/LevelSelectionScene.h; sourceTree = "<group>"; };
 		099B0E0D174A2D0E00525BA3 /* LevelSelectionScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LevelSelectionScene.mm; path = Code/LevelSelectionScene.mm; sourceTree = "<group>"; };
 		099B0E10174A558600525BA3 /* LevelPackSpecification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelPackSpecification.h; path = Code/LevelPackSpecification.h; sourceTree = "<group>"; };
@@ -158,7 +185,7 @@
 		099B0E22174A6CB800525BA3 /* LevelPackSpecificationTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LevelPackSpecificationTests.mm; path = Tests/LevelPackSpecificationTests.mm; sourceTree = "<group>"; };
 		099B0E25174A70BF00525BA3 /* LevelPackLayerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelPackLayerTests.h; path = Tests/LevelPackLayerTests.h; sourceTree = "<group>"; };
 		099B0E26174A70BF00525BA3 /* LevelPackLayerTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LevelPackLayerTests.mm; path = Tests/LevelPackLayerTests.mm; sourceTree = "<group>"; };
-		099B0E39174A76C700525BA3 /* libcocos2d-ios.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libcocos2d-ios.a"; path = "../__Kobold2D__/build/Release-iphoneos/libcocos2d-ios.a"; sourceTree = "<group>"; };
+		099B0E39174A76C700525BA3 /* libcocos2d-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d-ios.a"; path = "../__Kobold2D__/build/Release-iphoneos/libcocos2d-ios.a"; sourceTree = "<group>"; };
 		099B0E3B174AAAEC00525BA3 /* LevelPackContentsLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelPackContentsLayer.h; path = Code/LevelPackContentsLayer.h; sourceTree = "<group>"; };
 		099B0E3C174AAAEC00525BA3 /* LevelPackContentsLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LevelPackContentsLayer.mm; path = Code/LevelPackContentsLayer.mm; sourceTree = "<group>"; };
 		099B0E3E174AB46500525BA3 /* LevelPack1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = LevelPack1.plist; path = Levels/LevelPack1.plist; sourceTree = "<group>"; };
@@ -360,12 +387,12 @@
 		0932162C17418F530066CBB5 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				099B0E1B174A606400525BA3 /* Loading Scene */,
-				099B0E13174A57B200525BA3 /* Level Pack Selection Scene */,
-				09A181C61748D9B60020AAFC /* Options Scene */,
-				09A181C51748D9700020AAFC /* Level Selection Scene */,
-				09A181C41748D9640020AAFC /* Menu Scene */,
 				0932162D17418FCB0066CBB5 /* Gameplay Scene */,
+				099B0E13174A57B200525BA3 /* Level Pack Selection Scene */,
+				09A181C51748D9700020AAFC /* Level Selection Scene */,
+				099B0E1B174A606400525BA3 /* Loading Scene */,
+				09A181C41748D9640020AAFC /* Menu Scene */,
+				09A181C61748D9B60020AAFC /* Options Scene */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -426,6 +453,39 @@
 			name = "non-retina";
 			sourceTree = "<group>";
 		};
+		094ADC9017511F8300951374 /* LevelPack1 */ = {
+			isa = PBXGroup;
+			children = (
+				094ADC93175120CD00951374 /* Level1.plist */,
+				094ADC95175120E700951374 /* Level2.plist */,
+				094ADC97175121C600951374 /* Level3.plist */,
+			);
+			name = LevelPack1;
+			sourceTree = "<group>";
+		};
+		094ADC9117511F8D00951374 /* LevelPack2 */ = {
+			isa = PBXGroup;
+			children = (
+				094ADC991751228F00951374 /* Level3.plist */,
+				094ADC9A1751228F00951374 /* Level4.plist */,
+				094ADC9B1751228F00951374 /* Level2.plist */,
+				094ADC9C1751228F00951374 /* Level1.plist */,
+			);
+			name = LevelPack2;
+			sourceTree = "<group>";
+		};
+		094ADC9217511F9400951374 /* LevelPack3 */ = {
+			isa = PBXGroup;
+			children = (
+				094ADCA11751229C00951374 /* Level3.plist */,
+				094ADCA21751229C00951374 /* Level4.plist */,
+				094ADCA31751229C00951374 /* Level5.plist */,
+				094ADCA41751229C00951374 /* Level2.plist */,
+				094ADCA51751229C00951374 /* Level1.plist */,
+			);
+			name = LevelPack3;
+			sourceTree = "<group>";
+		};
 		099B0E0F174A538D00525BA3 /* Layers */ = {
 			isa = PBXGroup;
 			children = (
@@ -471,6 +531,8 @@
 				099B0E22174A6CB800525BA3 /* LevelPackSpecificationTests.mm */,
 				099B0E25174A70BF00525BA3 /* LevelPackLayerTests.h */,
 				099B0E26174A70BF00525BA3 /* LevelPackLayerTests.mm */,
+				094ADC8D1750C96700951374 /* LevelSpecificationTests.h */,
+				094ADC8E1750C96700951374 /* LevelSpecificationTests.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -570,6 +632,9 @@
 		09A181D6174927C40020AAFC /* Levels */ = {
 			isa = PBXGroup;
 			children = (
+				094ADC9217511F9400951374 /* LevelPack3 */,
+				094ADC9117511F8D00951374 /* LevelPack2 */,
+				094ADC9017511F8300951374 /* LevelPack1 */,
 				09A181D71749282F0020AAFC /* LevelPacks.plist */,
 				099B0E3E174AB46500525BA3 /* LevelPack1.plist */,
 				099B0E40174AB47300525BA3 /* LevelPack2.plist */,
@@ -907,6 +972,18 @@
 				099B0E3F174AB46500525BA3 /* LevelPack1.plist in Resources */,
 				099B0E41174AB47300525BA3 /* LevelPack2.plist in Resources */,
 				099B0E43174AB48A00525BA3 /* LevelPack3.plist in Resources */,
+				094ADC94175120CD00951374 /* Level1.plist in Resources */,
+				094ADC96175120E700951374 /* Level2.plist in Resources */,
+				094ADC98175121C600951374 /* Level3.plist in Resources */,
+				094ADC9D1751228F00951374 /* Level3.plist in Resources */,
+				094ADC9E1751228F00951374 /* Level4.plist in Resources */,
+				094ADC9F1751228F00951374 /* Level2.plist in Resources */,
+				094ADCA01751228F00951374 /* Level1.plist in Resources */,
+				094ADCA61751229C00951374 /* Level3.plist in Resources */,
+				094ADCA71751229C00951374 /* Level4.plist in Resources */,
+				094ADCA81751229C00951374 /* Level5.plist in Resources */,
+				094ADCA91751229C00951374 /* Level2.plist in Resources */,
+				094ADCAA1751229C00951374 /* Level1.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -964,6 +1041,7 @@
 				099B0E24174A6D6C00525BA3 /* LevelPackSpecification.mm in Sources */,
 				099B0E27174A70BF00525BA3 /* LevelPackLayerTests.mm in Sources */,
 				099B0E28174A70E200525BA3 /* LevelPackLayer.mm in Sources */,
+				094ADC8F1750C96700951374 /* LevelSpecificationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

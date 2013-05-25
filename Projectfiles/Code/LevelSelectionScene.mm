@@ -12,6 +12,14 @@
 #define LEVEL_TILES_PER_LAYER           20
 #define SCROLL_LAYER_WIDTH_OFFSET       20
 
+
+@interface LevelSelectionScene ()
+
+@property (nonatomic, strong) NSArray *levelSpecifications;
+
+@end
+
+
 @implementation LevelSelectionScene
 
 
@@ -19,7 +27,7 @@
 {
     self = [super init];
     if (self) {
-        _levelSpecifications = levelSpecifications;
+        self.levelSpecifications = levelSpecifications;
         NSArray *levelPackContentsLayers = [self levelPackContentsLayersFromSpecifications: _levelSpecifications];
         _scrollLayer = [[CCScrollLayer alloc] initWithLayers: levelPackContentsLayers
                                                  widthOffset: SCROLL_LAYER_WIDTH_OFFSET];

@@ -46,15 +46,22 @@
     NSParameterAssert(filename);
     
     NSString *path = [[NSBundle mainBundle] pathForResource: filename ofType: @"plist"];
-    NSArray *rawSpecifications = [NSArray arrayWithContentsOfFile: path];
     
-    NSMutableArray *convertedSpecifications = [@[] mutableCopy];
-    LevelPackSpecification *levelPackSpecification = nil;
-    for (NSDictionary * rawSpecification in rawSpecifications) {
-        levelPackSpecification = [[LevelPackSpecification alloc] initWithDictionary: rawSpecification];
-        [convertedSpecifications addObject: levelPackSpecification];
+    if (path) {
+        NSArray *rawSpecifications = [NSArray arrayWithContentsOfFile: path];
+        
+        NSMutableArray *convertedSpecifications = [@[] mutableCopy];
+        LevelPackSpecification *levelPackSpecification = nil;
+        
+        for (NSDictionary * rawSpecification in rawSpecifications) {
+            
+            levelPackSpecification = [[LevelPackSpecification alloc] initWithDictionary: rawSpecification];
+            [convertedSpecifications addObject: levelPackSpecification];
+        }
+        return [NSArray arrayWithArray: convertedSpecifications];
+    }else{
+        return nil;
     }
-    return [NSArray arrayWithArray: convertedSpecifications];
 }
 
 

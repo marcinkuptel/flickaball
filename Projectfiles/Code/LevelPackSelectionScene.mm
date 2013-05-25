@@ -13,6 +13,13 @@
 
 #define SCROLL_LAYER_WIDTH_OFFSET       20
 
+@interface LevelPackSelectionScene ()
+
+@property (nonatomic, strong) NSArray *levelPackSpecifications;
+
+@end
+
+
 @implementation LevelPackSelectionScene
 
 
@@ -20,7 +27,7 @@
 {
     self = [super init];
     if (self) {
-        _levelPackSpecifications = levelPackSpecifications;
+        self.levelPackSpecifications = levelPackSpecifications;
         NSArray *levelPackLayers = [self levelPackLayersFromSpecifications: levelPackSpecifications];
         _scrollLayer = [[CCScrollLayer alloc] initWithLayers: levelPackLayers widthOffset: SCROLL_LAYER_WIDTH_OFFSET];
         
@@ -55,15 +62,6 @@
     }
     return levelPackLayers;
 }
-
-
-#pragma mark - CCScrollLayerDelegate
-
-- (void) scrollLayer:(CCScrollLayer *)sender scrolledToPageNumber:(int)page
-{
-    
-}
-
 
 #pragma mark - Touches
 

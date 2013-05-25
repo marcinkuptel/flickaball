@@ -30,6 +30,9 @@
 }
 
 
+#pragma mark - Generating menu items
+
+
 - (NSArray*) menuItemsWithFntFile: (NSString*) fntFile
 {
     CCMenuItemLabel *play = [self playItemWithFntFile: fntFile];

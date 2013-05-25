@@ -29,7 +29,6 @@ NSString * const LPSLevelsFilename   = @"levelsFilename";
     if (self) {
         self.levelPackName = dictionary[LPSNameKey];
         self.levelsFilename = dictionary[LPSLevelsFilename];
-        self.levelSpecifications = [self levelSpecificationsWithLevelsFilename: self.levelsFilename];
     }
     return self;
 }
@@ -40,15 +39,31 @@ NSString * const LPSLevelsFilename   = @"levelsFilename";
     NSParameterAssert(levelsFilename);
     
     NSString *path = [[NSBundle mainBundle] pathForResource: levelsFilename ofType: @"plist"];
-    NSArray *rawLevelSpecifications = [NSArray arrayWithContentsOfFile: path];
-    LevelSpecification *levelSpecification = nil;
-    NSMutableArray *levelSpecifications = [@[] mutableCopy];
     
-    for (NSDictionary *rawLevelSpecification in rawLevelSpecifications) {
-        levelSpecification = [[LevelSpecification alloc] initWithDictionary: rawLevelSpecification];
-        [levelSpecifications addObject: levelSpecification];
+    if (path) {
+        NSArray *rawLevelSpecifications = [NSArray arrayWithContentsOfFile: path];
+        LevelSpecification *levelSpecification = nil;
+        NSMutableArray *levelSpecifications = [@[] mutableCopy];
+        
+        for (NSDictionary *rawLevelSpecification in rawLevelSpecifications) {
+            levelSpecification = [[LevelSpecification alloc] initWithDictionary: rawLevelSpecification];
+            [levelSpecifications addObject: levelSpecification];
+        }
+        return [NSArray arrayWithArray: levelSpecifications];
+    }else{
+        return nil;
     }
-    return [NSArray arrayWithArray: levelSpecifications];
+}
+
+
+#pragma mark - Accessors
+
+- (NSArray*) levelSpecifications
+{
+    if (_levelSpecifications == nil) {
+        _levelSpecifications = [self levelSpecificationsWithLevelsFilename: self.levelsFilename];
+    }
+    return _levelSpecifications;
 }
 
 @end

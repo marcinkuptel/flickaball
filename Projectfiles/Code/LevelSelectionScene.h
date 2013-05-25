@@ -17,8 +17,9 @@
 @interface LevelSelectionScene : CCScene<CCScrollLayerDelegate> {
     @private
     CCScrollLayer *_scrollLayer;
-    NSArray *_levelSpecifications;
 }
+
+@property (nonatomic, strong, readonly) NSArray *levelSpecifications;
 
 - (id) initWithLevelSpecifications: (NSArray*) levelSpecifications;
 

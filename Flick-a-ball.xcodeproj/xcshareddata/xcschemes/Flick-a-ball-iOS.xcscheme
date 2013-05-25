@@ -37,6 +37,11 @@
                BlueprintName = "Flick-a-ball tests"
                ReferencedContainer = "container:Flick-a-ball.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "LevelPackLayerTests">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>
