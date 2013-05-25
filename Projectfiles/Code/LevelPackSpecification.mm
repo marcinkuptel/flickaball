@@ -42,6 +42,12 @@ NSString * const LPSLevelsFilename   = @"levelsFilename";
     
     if (path) {
         NSArray *rawLevelSpecifications = [NSArray arrayWithContentsOfFile: path];
+        
+        if ([rawLevelSpecifications isKindOfClass: [NSArray class]] == NO) {
+            [NSException raise: NSInvalidArgumentException
+                        format: @"Level specifications file root object should be an array. It is %@", NSStringFromClass([rawLevelSpecifications class])];
+        }
+        
         LevelSpecification *levelSpecification = nil;
         NSMutableArray *levelSpecifications = [@[] mutableCopy];
         

@@ -36,7 +36,6 @@
     self = [super init];
     if (self) {
         self.levelPacksFilename = levelPacksFilename;
-        self.levelPackSpecifications = [self levelPackSpecificationsWithFilename: levelPacksFilename];
     }
     return self;
 }
@@ -50,6 +49,11 @@
     if (path) {
         NSArray *rawSpecifications = [NSArray arrayWithContentsOfFile: path];
         
+        if ([rawSpecifications isKindOfClass: [NSArray class]] == NO) {
+            [NSException raise: NSInvalidArgumentException
+                        format: @"Root object in the level pack file should be an array. It is %@", NSStringFromClass([rawSpecifications class])];
+        }
+        
         NSMutableArray *convertedSpecifications = [@[] mutableCopy];
         LevelPackSpecification *levelPackSpecification = nil;
         
@@ -62,6 +66,16 @@
     }else{
         return nil;
     }
+}
+
+#pragma mark - Accessors
+
+- (NSArray*) levelPackSpecifications
+{
+    if (_levelPackSpecifications == nil) {
+        _levelPackSpecifications = [self levelPackSpecificationsWithFilename: self.levelPacksFilename];
+    }
+    return _levelPackSpecifications;
 }
 
 
