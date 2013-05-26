@@ -8,6 +8,8 @@
 
 #import "LevelPackContentsLayer.h"
 #import "LevelSpecification.h"
+#import "LevelConstructionDirector.h"
+#import "BasicLevelBuilder.h"
 
 #define TILE_SIZE       CGSizeMake(100, 100)
 #define GRID_WIDTH      500
@@ -37,7 +39,8 @@
                   vPadding: 10
                   hPadding: 10];
         
-        [self addTiles: self.levelTiles atOrigin: ccp((winSize.width - GRID_WIDTH)/2, (winSize.height - GRID_HEIGHT)/2)];
+        [self addTiles: self.levelTiles
+              atOrigin: ccp((winSize.width - GRID_WIDTH)/2, (winSize.height - GRID_HEIGHT)/2)];
     }
     return self;
 }
@@ -113,7 +116,17 @@
 
 - (void) didSelectTile:(LevelTile *)levelTile atIndex:(NSUInteger)tileIndex
 {
-    CCLOG(@"Index: %i", tileIndex);
+    NSParameterAssert(tileIndex >= 0 && tileIndex < [self.levelSpecifications count]);
+    
+    LevelSpecification *levelSpecification = self.levelSpecifications[tileIndex];
+    
+    BasicLevelBuilder *levelBuilder = [[BasicLevelBuilder alloc] init];
+    LevelConstructionDirector *constructionDirector = [[LevelConstructionDirector alloc] initWithLevelBuilder: levelBuilder
+                                                                                           levelSpecification: levelSpecification];
+    
+    [constructionDirector construct];
+    CCScene *gameplayScene = (CCScene*)[levelBuilder getGameplayScene];
+    [[CCDirector sharedDirector] replaceScene: gameplayScene];
 }
 
 @end

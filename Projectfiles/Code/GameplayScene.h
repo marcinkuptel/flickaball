@@ -11,13 +11,10 @@
 
 @class BackgroundLayer;
 @class GameplayLayer;
-@class LevelSpecification;
 
 @interface GameplayScene : CCScene {
     BackgroundLayer *_backgroundLayer;
     GameplayLayer *_gameplayLayer;
 }
-
-- (id) initWithLevelSpecification: (LevelSpecification*) specification;
 
 @end

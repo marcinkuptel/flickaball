@@ -12,6 +12,8 @@
 		091A91731747FE060014B8A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091A91721747FE060014B8A0 /* Foundation.framework */; };
 		091A91791747FE060014B8A0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 091A91771747FE060014B8A0 /* InfoPlist.strings */; };
 		091A91891747FF260014B8A0 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 091A91821747FF260014B8A0 /* libOCMock.a */; };
+		091F9C1D1752A34800104463 /* BasicLevelBuilder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 091F9C1C1752A34800104463 /* BasicLevelBuilder.mm */; };
+		091F9C231752A9A600104463 /* LevelConstructionDirector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 091F9C221752A9A600104463 /* LevelConstructionDirector.mm */; };
 		0932162717418CAD0066CBB5 /* BodySprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0932161D17418CAD0066CBB5 /* BodySprite.mm */; };
 		0932162817418CAD0066CBB5 /* ContactListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0932162017418CAD0066CBB5 /* ContactListener.mm */; };
 		0932162917418CAD0066CBB5 /* GB2ShapeCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0932162217418CAD0066CBB5 /* GB2ShapeCache.mm */; };
@@ -138,6 +140,11 @@
 		091A91861747FF260014B8A0 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMock.h; path = "External libraries/OCMock/OCMock.h"; sourceTree = "<group>"; };
 		091A91871747FF260014B8A0 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMockObject.h; path = "External libraries/OCMock/OCMockObject.h"; sourceTree = "<group>"; };
 		091A91881747FF260014B8A0 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMockRecorder.h; path = "External libraries/OCMock/OCMockRecorder.h"; sourceTree = "<group>"; };
+		091F9C1B1752A34800104463 /* BasicLevelBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicLevelBuilder.h; path = Code/BasicLevelBuilder.h; sourceTree = "<group>"; };
+		091F9C1C1752A34800104463 /* BasicLevelBuilder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BasicLevelBuilder.mm; path = Code/BasicLevelBuilder.mm; sourceTree = "<group>"; };
+		091F9C201752A96E00104463 /* LevelBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LevelBuilder.h; path = Code/LevelBuilder.h; sourceTree = "<group>"; };
+		091F9C211752A9A600104463 /* LevelConstructionDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelConstructionDirector.h; path = Code/LevelConstructionDirector.h; sourceTree = "<group>"; };
+		091F9C221752A9A600104463 /* LevelConstructionDirector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LevelConstructionDirector.mm; path = Code/LevelConstructionDirector.mm; sourceTree = "<group>"; };
 		0932161C17418CAD0066CBB5 /* BodySprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BodySprite.h; path = Code/Base/BodySprite.h; sourceTree = "<group>"; };
 		0932161D17418CAD0066CBB5 /* BodySprite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BodySprite.mm; path = Code/Base/BodySprite.mm; sourceTree = "<group>"; };
 		0932161E17418CAD0066CBB5 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Code/Base/Constants.h; sourceTree = "<group>"; };
@@ -362,6 +369,31 @@
 				091A91881747FF260014B8A0 /* OCMockRecorder.h */,
 			);
 			name = OCMock;
+			sourceTree = "<group>";
+		};
+		091F9C1E1752A82600104463 /* Level building */ = {
+			isa = PBXGroup;
+			children = (
+				091F9C1B1752A34800104463 /* BasicLevelBuilder.h */,
+				091F9C1C1752A34800104463 /* BasicLevelBuilder.mm */,
+				091F9C201752A96E00104463 /* LevelBuilder.h */,
+				091F9C211752A9A600104463 /* LevelConstructionDirector.h */,
+				091F9C221752A9A600104463 /* LevelConstructionDirector.mm */,
+			);
+			name = "Level building";
+			sourceTree = "<group>";
+		};
+		091F9C1F1752A83400104463 /* Level loading */ = {
+			isa = PBXGroup;
+			children = (
+				09A181D3174927AF0020AAFC /* LevelLoader.h */,
+				09A181D4174927AF0020AAFC /* LevelLoader.mm */,
+				09A181DC17492BBF0020AAFC /* LevelSpecification.h */,
+				09A181DD17492BC00020AAFC /* LevelSpecification.mm */,
+				099B0E10174A558600525BA3 /* LevelPackSpecification.h */,
+				099B0E11174A558600525BA3 /* LevelPackSpecification.mm */,
+			);
+			name = "Level loading";
 			sourceTree = "<group>";
 		};
 		0932161B17418C0C0066CBB5 /* Base */ = {
@@ -685,12 +717,8 @@
 		09A181FE174981B10020AAFC /* Levels management */ = {
 			isa = PBXGroup;
 			children = (
-				09A181D3174927AF0020AAFC /* LevelLoader.h */,
-				09A181D4174927AF0020AAFC /* LevelLoader.mm */,
-				09A181DC17492BBF0020AAFC /* LevelSpecification.h */,
-				09A181DD17492BC00020AAFC /* LevelSpecification.mm */,
-				099B0E10174A558600525BA3 /* LevelPackSpecification.h */,
-				099B0E11174A558600525BA3 /* LevelPackSpecification.mm */,
+				091F9C1F1752A83400104463 /* Level loading */,
+				091F9C1E1752A82600104463 /* Level building */,
 			);
 			name = "Levels management";
 			sourceTree = "<group>";
@@ -1076,6 +1104,8 @@
 				099B0E1A174A57ED00525BA3 /* LevelPackLayer.mm in Sources */,
 				099B0E3D174AAAEC00525BA3 /* LevelPackContentsLayer.mm in Sources */,
 				099B0E47174AB86800525BA3 /* LevelTile.mm in Sources */,
+				091F9C1D1752A34800104463 /* BasicLevelBuilder.mm in Sources */,
+				091F9C231752A9A600104463 /* LevelConstructionDirector.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

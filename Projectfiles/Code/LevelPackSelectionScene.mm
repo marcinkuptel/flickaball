@@ -29,7 +29,8 @@
     if (self) {
         self.levelPackSpecifications = levelPackSpecifications;
         NSArray *levelPackLayers = [self levelPackLayersFromSpecifications: levelPackSpecifications];
-        _scrollLayer = [[CCScrollLayer alloc] initWithLayers: levelPackLayers widthOffset: SCROLL_LAYER_WIDTH_OFFSET];
+        _scrollLayer = [[CCScrollLayer alloc] initWithLayers: levelPackLayers
+                                                 widthOffset: SCROLL_LAYER_WIDTH_OFFSET];
         
         [self addChild: _scrollLayer];
         
