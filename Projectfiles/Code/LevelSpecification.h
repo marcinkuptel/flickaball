@@ -10,6 +10,8 @@
 
 @interface LevelSpecification : NSObject
 
+@property (nonatomic, strong, readonly) NSArray *worldObjects;
+
 - (id) initWithDictionary: (NSDictionary*) dictionary;
 
 @end

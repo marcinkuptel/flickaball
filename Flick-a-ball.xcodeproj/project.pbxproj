@@ -36,6 +36,8 @@
 		094ADCA81751229C00951374 /* Level5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADCA31751229C00951374 /* Level5.plist */; };
 		094ADCA91751229C00951374 /* Level2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADCA41751229C00951374 /* Level2.plist */; };
 		094ADCAA1751229C00951374 /* Level1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADCA51751229C00951374 /* Level1.plist */; };
+		097EE87C1753EC4C00D69F97 /* GameObjects.plist in Resources */ = {isa = PBXBuildFile; fileRef = 097EE87B1753EC4C00D69F97 /* GameObjects.plist */; };
+		097EE87F1754016B00D69F97 /* GameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 097EE87E1754016B00D69F97 /* GameObject.m */; };
 		099B0E0E174A2D0E00525BA3 /* LevelSelectionScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 099B0E0D174A2D0E00525BA3 /* LevelSelectionScene.mm */; };
 		099B0E12174A558600525BA3 /* LevelPackSpecification.mm in Sources */ = {isa = PBXBuildFile; fileRef = 099B0E11174A558600525BA3 /* LevelPackSpecification.mm */; };
 		099B0E16174A57CD00525BA3 /* LevelPackSelectionScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 099B0E15174A57CD00525BA3 /* LevelPackSelectionScene.mm */; };
@@ -178,6 +180,9 @@
 		094ADCA31751229C00951374 /* Level5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level5.plist; path = Levels/LevelPack3/Level5.plist; sourceTree = "<group>"; };
 		094ADCA41751229C00951374 /* Level2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level2.plist; path = Levels/LevelPack3/Level2.plist; sourceTree = "<group>"; };
 		094ADCA51751229C00951374 /* Level1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level1.plist; path = Levels/LevelPack3/Level1.plist; sourceTree = "<group>"; };
+		097EE87B1753EC4C00D69F97 /* GameObjects.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = GameObjects.plist; path = "Game objects/GameObjects.plist"; sourceTree = "<group>"; };
+		097EE87D1754016B00D69F97 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameObject.h; path = Code/GameObject.h; sourceTree = "<group>"; };
+		097EE87E1754016B00D69F97 /* GameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameObject.m; path = Code/GameObject.m; sourceTree = "<group>"; };
 		099B0E0C174A2D0E00525BA3 /* LevelSelectionScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelSelectionScene.h; path = Code/LevelSelectionScene.h; sourceTree = "<group>"; };
 		099B0E0D174A2D0E00525BA3 /* LevelSelectionScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LevelSelectionScene.mm; path = Code/LevelSelectionScene.mm; sourceTree = "<group>"; };
 		099B0E10174A558600525BA3 /* LevelPackSpecification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelPackSpecification.h; path = Code/LevelPackSpecification.h; sourceTree = "<group>"; };
@@ -710,6 +715,8 @@
 				09A18200174981CF0020AAFC /* ObjectRepository.mm */,
 				09A18202174982040020AAFC /* ObjectConstructor.h */,
 				09A18203174982040020AAFC /* ObjectConstructor.mm */,
+				097EE87D1754016B00D69F97 /* GameObject.h */,
+				097EE87E1754016B00D69F97 /* GameObject.m */,
 			);
 			name = "Game objects management";
 			sourceTree = "<group>";
@@ -726,6 +733,7 @@
 		09A18205174982E80020AAFC /* Game objects */ = {
 			isa = PBXGroup;
 			children = (
+				097EE87B1753EC4C00D69F97 /* GameObjects.plist */,
 			);
 			name = "Game objects";
 			sourceTree = "<group>";
@@ -1012,6 +1020,7 @@
 				094ADCA81751229C00951374 /* Level5.plist in Resources */,
 				094ADCA91751229C00951374 /* Level2.plist in Resources */,
 				094ADCAA1751229C00951374 /* Level1.plist in Resources */,
+				097EE87C1753EC4C00D69F97 /* GameObjects.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1106,6 +1115,7 @@
 				099B0E47174AB86800525BA3 /* LevelTile.mm in Sources */,
 				091F9C1D1752A34800104463 /* BasicLevelBuilder.mm in Sources */,
 				091F9C231752A9A600104463 /* LevelConstructionDirector.mm in Sources */,
+				097EE87F1754016B00D69F97 /* GameObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

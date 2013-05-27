@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="DataModel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Achievement" syncable="YES">
+        <attribute name="score" optional="YES" attributeType="Integer 32" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Integer 32" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <relationship name="level" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Level" inverseName="achievement" inverseEntity="Level" syncable="YES"/>
+    </entity>
+    <entity name="Level" syncable="YES">
+        <relationship name="achievement" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="Achievement" inverseName="level" inverseEntity="Achievement" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Level" positionX="-4410" positionY="-1917" width="128" height="58"/>
+        <element name="Achievement" positionX="-4653" positionY="-1915" width="128" height="88"/>
+    </elements>
 </model>
