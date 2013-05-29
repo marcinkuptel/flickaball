@@ -31,14 +31,14 @@ typedef NS_ENUM(NSUInteger, GLBallFlickState)
 @implementation BallLayer
 
 
-- (id) initWithWorld:(b2World *)world
+- (id) initWithBall:(Ball *)ball
 {
     self = [super init];
     if (self) {
         
-        _world = world;
-        
-        [self addBall];
+        [self addChild: ball];
+        self.ball = ball;
+        self.ball.physicsBody->SetLinearDamping(BALL_LINEAR_DAMPING);
         
         //add touch delegate
         [[CCDirector sharedDirector].touchDispatcher addTargetedDelegate: self
@@ -114,16 +114,6 @@ typedef NS_ENUM(NSUInteger, GLBallFlickState)
     }
 }
 
-#pragma mark - Others
-
-
-- (void) addBall
-{
-    Ball *ball = [Ball ballWithWorld: _world position: [CCDirector sharedDirector].screenCenter];
-    [self addChild: ball];
-    self.ball = ball;
-    self.ball.physicsBody->SetLinearDamping(BALL_LINEAR_DAMPING);
-}
 
 
 @end

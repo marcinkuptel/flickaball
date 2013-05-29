@@ -8,20 +8,14 @@
 
 #import "Box2D.h"
 
+@class Ball;
+
 /**
  Class responsible for displaying and handling the logic
  behind the ball object
  */
-@interface BallLayer : CCLayer {
-    @private
-    b2World *_world;
-}
+@interface BallLayer : CCLayer
 
-/**
- Initializes the ball layer with a world object where the ball will be placed.
- 
- @param world Box2D world where the ball will be placed.
- */
-- (id) initWithWorld: (b2World*) world;
+- (id) initWithBall: (Ball*) ball;
 
 @end

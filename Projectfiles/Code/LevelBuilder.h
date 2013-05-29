@@ -12,7 +12,8 @@
 
 @required
 
-- (void) buildGameplayLayer;
+- (void) buildGameplayScene;
+- (void) buildBackgroundLayer;
 - (void) buildBoardLayer;
 - (void) buildUserControlsLayer;
 - (void) buildBallLayer;

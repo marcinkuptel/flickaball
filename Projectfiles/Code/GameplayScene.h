@@ -7,14 +7,26 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "cocos2d.h"
+#import "Box2D.h"
+#import "GLES-Render.h"
 
 @class BackgroundLayer;
-@class GameplayLayer;
+@class BallLayer;
+@class BoardLayer;
 
+/**
+ This scene is responsible for creating the world object and advancing
+ the physics simulation.
+ */
 @interface GameplayScene : CCScene {
-    BackgroundLayer *_backgroundLayer;
-    GameplayLayer *_gameplayLayer;
+    @private
+    b2World *_world;
+    GLESDebugDraw* _debugDraw;
 }
+
+@property (nonatomic, readonly) b2World *world;
+@property (nonatomic, strong) BackgroundLayer *backgroundLayer;
+@property (nonatomic, strong) BoardLayer *boardLayer;
+@property (nonatomic, strong) BallLayer *ballLayer;
 
 @end

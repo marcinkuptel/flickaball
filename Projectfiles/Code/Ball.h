@@ -6,12 +6,12 @@
 //  Copyright 2013 __MyCompanyName__. All rights reserved.
 //
 
-#import "BodySprite.h"
+#import "GameObject.h"
 
 /**
  Class representing the ball object.
  */
-@interface Ball : BodySprite {
+@interface Ball : GameObject {
     
 }
 

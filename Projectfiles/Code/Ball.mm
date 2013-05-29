@@ -8,7 +8,6 @@
 
 #import "Ball.h"
 
-
 @implementation Ball
 
 + (id) ballWithWorld: (b2World*) world position: (CGPoint) position
@@ -26,6 +25,21 @@
         self.physicsBody->SetType(b2_dynamicBody);
     }
     return self;
+}
+
+
++ (void) load
+{
+    [[ObjectFactory sharedFactory] registerClass: self
+                                     forObjectID: FBBallObjectIdentifier];
+}
+
++ (GameObject*) objectWithShape: (NSString *)shapeName
+                          world: (b2World *)world
+                     parameters: (NSDictionary *)parameters
+{
+    Ball *ball = [[Ball alloc] initWithWorld: world position: [CCDirector sharedDirector].screenCenter];
+    return ball;
 }
 
 @end

@@ -31,7 +31,8 @@
 
 - (void) construct
 {
-    [self.levelBuilder buildGameplayLayer];
+    [self.levelBuilder buildGameplayScene];
+    [self.levelBuilder buildBackgroundLayer];
     [self.levelBuilder buildBoardLayer];
     [self.levelBuilder buildUserControlsLayer];
     [self.levelBuilder buildBallLayer];

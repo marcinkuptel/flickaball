@@ -12,6 +12,10 @@
 		091A91731747FE060014B8A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091A91721747FE060014B8A0 /* Foundation.framework */; };
 		091A91791747FE060014B8A0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 091A91771747FE060014B8A0 /* InfoPlist.strings */; };
 		091A91891747FF260014B8A0 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 091A91821747FF260014B8A0 /* libOCMock.a */; };
+		091F3A56175541DF00B26106 /* ObjectRepositoryTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 091F3A55175541DF00B26106 /* ObjectRepositoryTests.mm */; };
+		091F3A591755452200B26106 /* ObjectConstructorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 091F3A581755452200B26106 /* ObjectConstructorTests.m */; };
+		091F3A5C17554FA800B26106 /* Wall.mm in Sources */ = {isa = PBXBuildFile; fileRef = 091F3A5B17554FA800B26106 /* Wall.mm */; };
+		091F3A5F175557C300B26106 /* ObjectIdentifiers.m in Sources */ = {isa = PBXBuildFile; fileRef = 091F3A5E175557C300B26106 /* ObjectIdentifiers.m */; };
 		091F9C1D1752A34800104463 /* BasicLevelBuilder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 091F9C1C1752A34800104463 /* BasicLevelBuilder.mm */; };
 		091F9C231752A9A600104463 /* LevelConstructionDirector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 091F9C221752A9A600104463 /* LevelConstructionDirector.mm */; };
 		0932162717418CAD0066CBB5 /* BodySprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0932161D17418CAD0066CBB5 /* BodySprite.mm */; };
@@ -20,10 +24,9 @@
 		0932162A17418CAD0066CBB5 /* Helper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0932162417418CAD0066CBB5 /* Helper.mm */; };
 		0932162B17418CAD0066CBB5 /* PhysicsSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0932162617418CAD0066CBB5 /* PhysicsSprite.mm */; };
 		09321630174190070066CBB5 /* GameplayScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0932162F174190070066CBB5 /* GameplayScene.mm */; };
-		093216341741924E0066CBB5 /* GameplayLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 093216331741924E0066CBB5 /* GameplayLayer.mm */; };
 		093216381741939C0066CBB5 /* BackgroundLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 093216371741939C0066CBB5 /* BackgroundLayer.mm */; };
 		0932163B174194D10066CBB5 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09321639174194D10066CBB5 /* GLES-Render.mm */; };
-		094ADC8F1750C96700951374 /* LevelSpecificationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 094ADC8E1750C96700951374 /* LevelSpecificationTests.m */; };
+		094ADC8F1750C96700951374 /* LevelSpecificationTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 094ADC8E1750C96700951374 /* LevelSpecificationTests.mm */; };
 		094ADC94175120CD00951374 /* Level1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADC93175120CD00951374 /* Level1.plist */; };
 		094ADC96175120E700951374 /* Level2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADC95175120E700951374 /* Level2.plist */; };
 		094ADC98175121C600951374 /* Level3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADC97175121C600951374 /* Level3.plist */; };
@@ -37,7 +40,7 @@
 		094ADCA91751229C00951374 /* Level2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADCA41751229C00951374 /* Level2.plist */; };
 		094ADCAA1751229C00951374 /* Level1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADCA51751229C00951374 /* Level1.plist */; };
 		097EE87C1753EC4C00D69F97 /* GameObjects.plist in Resources */ = {isa = PBXBuildFile; fileRef = 097EE87B1753EC4C00D69F97 /* GameObjects.plist */; };
-		097EE87F1754016B00D69F97 /* GameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 097EE87E1754016B00D69F97 /* GameObject.m */; };
+		097EE87F1754016B00D69F97 /* GameObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 097EE87E1754016B00D69F97 /* GameObject.mm */; };
 		099B0E0E174A2D0E00525BA3 /* LevelSelectionScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 099B0E0D174A2D0E00525BA3 /* LevelSelectionScene.mm */; };
 		099B0E12174A558600525BA3 /* LevelPackSpecification.mm in Sources */ = {isa = PBXBuildFile; fileRef = 099B0E11174A558600525BA3 /* LevelPackSpecification.mm */; };
 		099B0E16174A57CD00525BA3 /* LevelPackSelectionScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 099B0E15174A57CD00525BA3 /* LevelPackSelectionScene.mm */; };
@@ -75,7 +78,7 @@
 		09A181EE1749381B0020AAFC /* MenuFont-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A181EA1749381B0020AAFC /* MenuFont-ipadhd.png */; };
 		09A181F817493ADC0020AAFC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09A181FA17493ADC0020AAFC /* Localizable.strings */; };
 		09A18201174981CF0020AAFC /* ObjectRepository.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09A18200174981CF0020AAFC /* ObjectRepository.mm */; };
-		09A18204174982040020AAFC /* ObjectConstructor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09A18203174982040020AAFC /* ObjectConstructor.mm */; };
+		09A18204174982040020AAFC /* ObjectFactory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09A18203174982040020AAFC /* ObjectFactory.mm */; };
 		DC21B88B1511078F00FD4891 /* fps_images-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B8881511078F00FD4891 /* fps_images-hd.png */; };
 		DC21B88C1511078F00FD4891 /* fps_images-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B8891511078F00FD4891 /* fps_images-ipadhd.png */; };
 		DC21B88D1511078F00FD4891 /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B88A1511078F00FD4891 /* fps_images.png */; };
@@ -142,6 +145,14 @@
 		091A91861747FF260014B8A0 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMock.h; path = "External libraries/OCMock/OCMock.h"; sourceTree = "<group>"; };
 		091A91871747FF260014B8A0 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMockObject.h; path = "External libraries/OCMock/OCMockObject.h"; sourceTree = "<group>"; };
 		091A91881747FF260014B8A0 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMockRecorder.h; path = "External libraries/OCMock/OCMockRecorder.h"; sourceTree = "<group>"; };
+		091F3A54175541DF00B26106 /* ObjectRepositoryTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjectRepositoryTests.h; path = Tests/ObjectRepositoryTests.h; sourceTree = "<group>"; };
+		091F3A55175541DF00B26106 /* ObjectRepositoryTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ObjectRepositoryTests.mm; path = Tests/ObjectRepositoryTests.mm; sourceTree = "<group>"; };
+		091F3A571755452200B26106 /* ObjectConstructorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjectConstructorTests.h; path = Tests/ObjectConstructorTests.h; sourceTree = "<group>"; };
+		091F3A581755452200B26106 /* ObjectConstructorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ObjectConstructorTests.m; path = Tests/ObjectConstructorTests.m; sourceTree = "<group>"; };
+		091F3A5A17554FA800B26106 /* Wall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Wall.h; path = Code/Wall.h; sourceTree = "<group>"; };
+		091F3A5B17554FA800B26106 /* Wall.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Wall.mm; path = Code/Wall.mm; sourceTree = "<group>"; };
+		091F3A5D175557C300B26106 /* ObjectIdentifiers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjectIdentifiers.h; path = Code/ObjectIdentifiers.h; sourceTree = "<group>"; };
+		091F3A5E175557C300B26106 /* ObjectIdentifiers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ObjectIdentifiers.m; path = Code/ObjectIdentifiers.m; sourceTree = "<group>"; };
 		091F9C1B1752A34800104463 /* BasicLevelBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicLevelBuilder.h; path = Code/BasicLevelBuilder.h; sourceTree = "<group>"; };
 		091F9C1C1752A34800104463 /* BasicLevelBuilder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BasicLevelBuilder.mm; path = Code/BasicLevelBuilder.mm; sourceTree = "<group>"; };
 		091F9C201752A96E00104463 /* LevelBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LevelBuilder.h; path = Code/LevelBuilder.h; sourceTree = "<group>"; };
@@ -160,14 +171,12 @@
 		0932162617418CAD0066CBB5 /* PhysicsSprite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PhysicsSprite.mm; path = Code/Base/PhysicsSprite.mm; sourceTree = "<group>"; };
 		0932162E174190070066CBB5 /* GameplayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameplayScene.h; path = Code/GameplayScene.h; sourceTree = "<group>"; };
 		0932162F174190070066CBB5 /* GameplayScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GameplayScene.mm; path = Code/GameplayScene.mm; sourceTree = "<group>"; };
-		093216321741924E0066CBB5 /* GameplayLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameplayLayer.h; path = Code/GameplayLayer.h; sourceTree = "<group>"; };
-		093216331741924E0066CBB5 /* GameplayLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GameplayLayer.mm; path = Code/GameplayLayer.mm; sourceTree = "<group>"; };
 		093216361741939C0066CBB5 /* BackgroundLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackgroundLayer.h; path = Code/BackgroundLayer.h; sourceTree = "<group>"; };
 		093216371741939C0066CBB5 /* BackgroundLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BackgroundLayer.mm; path = Code/BackgroundLayer.mm; sourceTree = "<group>"; };
 		09321639174194D10066CBB5 /* GLES-Render.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "GLES-Render.mm"; path = "Code/Base/GLES-Render.mm"; sourceTree = "<group>"; };
 		0932163A174194D10066CBB5 /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GLES-Render.h"; path = "Code/Base/GLES-Render.h"; sourceTree = "<group>"; };
 		094ADC8D1750C96700951374 /* LevelSpecificationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelSpecificationTests.h; path = Tests/LevelSpecificationTests.h; sourceTree = "<group>"; };
-		094ADC8E1750C96700951374 /* LevelSpecificationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LevelSpecificationTests.m; path = Tests/LevelSpecificationTests.m; sourceTree = "<group>"; };
+		094ADC8E1750C96700951374 /* LevelSpecificationTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LevelSpecificationTests.mm; path = Tests/LevelSpecificationTests.mm; sourceTree = "<group>"; };
 		094ADC93175120CD00951374 /* Level1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level1.plist; path = Levels/LevelPack1/Level1.plist; sourceTree = "<group>"; };
 		094ADC95175120E700951374 /* Level2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level2.plist; path = Levels/LevelPack1/Level2.plist; sourceTree = "<group>"; };
 		094ADC97175121C600951374 /* Level3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level3.plist; path = Levels/LevelPack1/Level3.plist; sourceTree = "<group>"; };
@@ -182,7 +191,7 @@
 		094ADCA51751229C00951374 /* Level1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level1.plist; path = Levels/LevelPack3/Level1.plist; sourceTree = "<group>"; };
 		097EE87B1753EC4C00D69F97 /* GameObjects.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = GameObjects.plist; path = "Game objects/GameObjects.plist"; sourceTree = "<group>"; };
 		097EE87D1754016B00D69F97 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameObject.h; path = Code/GameObject.h; sourceTree = "<group>"; };
-		097EE87E1754016B00D69F97 /* GameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameObject.m; path = Code/GameObject.m; sourceTree = "<group>"; };
+		097EE87E1754016B00D69F97 /* GameObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GameObject.mm; path = Code/GameObject.mm; sourceTree = "<group>"; };
 		099B0E0C174A2D0E00525BA3 /* LevelSelectionScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelSelectionScene.h; path = Code/LevelSelectionScene.h; sourceTree = "<group>"; };
 		099B0E0D174A2D0E00525BA3 /* LevelSelectionScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LevelSelectionScene.mm; path = Code/LevelSelectionScene.mm; sourceTree = "<group>"; };
 		099B0E10174A558600525BA3 /* LevelPackSpecification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelPackSpecification.h; path = Code/LevelPackSpecification.h; sourceTree = "<group>"; };
@@ -242,8 +251,8 @@
 		09A181FC17493AED0020AAFC /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		09A181FF174981CF0020AAFC /* ObjectRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjectRepository.h; path = Code/ObjectRepository.h; sourceTree = "<group>"; };
 		09A18200174981CF0020AAFC /* ObjectRepository.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ObjectRepository.mm; path = Code/ObjectRepository.mm; sourceTree = "<group>"; };
-		09A18202174982040020AAFC /* ObjectConstructor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjectConstructor.h; path = Code/ObjectConstructor.h; sourceTree = "<group>"; };
-		09A18203174982040020AAFC /* ObjectConstructor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ObjectConstructor.mm; path = Code/ObjectConstructor.mm; sourceTree = "<group>"; };
+		09A18202174982040020AAFC /* ObjectFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjectFactory.h; path = Code/ObjectFactory.h; sourceTree = "<group>"; };
+		09A18203174982040020AAFC /* ObjectFactory.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ObjectFactory.mm; path = Code/ObjectFactory.mm; sourceTree = "<group>"; };
 		DC21B8881511078F00FD4891 /* fps_images-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fps_images-hd.png"; sourceTree = "<group>"; };
 		DC21B8891511078F00FD4891 /* fps_images-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fps_images-ipadhd.png"; sourceTree = "<group>"; };
 		DC21B88A1511078F00FD4891 /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fps_images.png; sourceTree = "<group>"; };
@@ -437,7 +446,6 @@
 		0932162D17418FCB0066CBB5 /* Gameplay Scene */ = {
 			isa = PBXGroup;
 			children = (
-				09A173E01742BECE000AD779 /* Objects */,
 				09321631174191FA0066CBB5 /* Layers */,
 				0932162E174190070066CBB5 /* GameplayScene.h */,
 				0932162F174190070066CBB5 /* GameplayScene.mm */,
@@ -448,8 +456,9 @@
 		09321631174191FA0066CBB5 /* Layers */ = {
 			isa = PBXGroup;
 			children = (
+				09A181CA1748DB8C0020AAFC /* Ball Layer */,
+				09A181C91748DB840020AAFC /* Board Layer */,
 				09A181C81748DB7B0020AAFC /* Background Layer */,
-				09A181C71748DB6E0020AAFC /* Gameplay Layer */,
 			);
 			name = Layers;
 			sourceTree = "<group>";
@@ -569,7 +578,11 @@
 				099B0E25174A70BF00525BA3 /* LevelPackLayerTests.h */,
 				099B0E26174A70BF00525BA3 /* LevelPackLayerTests.mm */,
 				094ADC8D1750C96700951374 /* LevelSpecificationTests.h */,
-				094ADC8E1750C96700951374 /* LevelSpecificationTests.m */,
+				094ADC8E1750C96700951374 /* LevelSpecificationTests.mm */,
+				091F3A54175541DF00B26106 /* ObjectRepositoryTests.h */,
+				091F3A55175541DF00B26106 /* ObjectRepositoryTests.mm */,
+				091F3A571755452200B26106 /* ObjectConstructorTests.h */,
+				091F3A581755452200B26106 /* ObjectConstructorTests.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -588,6 +601,8 @@
 			children = (
 				09A173E11742BF24000AD779 /* Ball.h */,
 				09A173E21742BF24000AD779 /* Ball.mm */,
+				091F3A5A17554FA800B26106 /* Wall.h */,
+				091F3A5B17554FA800B26106 /* Wall.mm */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -617,17 +632,6 @@
 			children = (
 			);
 			name = "Options Scene";
-			sourceTree = "<group>";
-		};
-		09A181C71748DB6E0020AAFC /* Gameplay Layer */ = {
-			isa = PBXGroup;
-			children = (
-				09A181C91748DB840020AAFC /* Board Layer */,
-				09A181CA1748DB8C0020AAFC /* Ball Layer */,
-				093216321741924E0066CBB5 /* GameplayLayer.h */,
-				093216331741924E0066CBB5 /* GameplayLayer.mm */,
-			);
-			name = "Gameplay Layer";
 			sourceTree = "<group>";
 		};
 		09A181C81748DB7B0020AAFC /* Background Layer */ = {
@@ -711,12 +715,15 @@
 		09A181FD174981AA0020AAFC /* Game objects management */ = {
 			isa = PBXGroup;
 			children = (
+				091F3A5D175557C300B26106 /* ObjectIdentifiers.h */,
+				091F3A5E175557C300B26106 /* ObjectIdentifiers.m */,
+				09A173E01742BECE000AD779 /* Objects */,
 				09A181FF174981CF0020AAFC /* ObjectRepository.h */,
 				09A18200174981CF0020AAFC /* ObjectRepository.mm */,
-				09A18202174982040020AAFC /* ObjectConstructor.h */,
-				09A18203174982040020AAFC /* ObjectConstructor.mm */,
+				09A18202174982040020AAFC /* ObjectFactory.h */,
+				09A18203174982040020AAFC /* ObjectFactory.mm */,
 				097EE87D1754016B00D69F97 /* GameObject.h */,
-				097EE87E1754016B00D69F97 /* GameObject.m */,
+				097EE87E1754016B00D69F97 /* GameObject.mm */,
 			);
 			name = "Game objects management";
 			sourceTree = "<group>";
@@ -943,7 +950,7 @@
 		DCC1A0D813A94EC0005BD75D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0460;
 			};
 			buildConfigurationList = DCC1A0DB13A94EC0005BD75D /* Build configuration list for PBXProject "Flick-a-ball" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1078,7 +1085,9 @@
 				099B0E24174A6D6C00525BA3 /* LevelPackSpecification.mm in Sources */,
 				099B0E27174A70BF00525BA3 /* LevelPackLayerTests.mm in Sources */,
 				099B0E28174A70E200525BA3 /* LevelPackLayer.mm in Sources */,
-				094ADC8F1750C96700951374 /* LevelSpecificationTests.m in Sources */,
+				094ADC8F1750C96700951374 /* LevelSpecificationTests.mm in Sources */,
+				091F3A56175541DF00B26106 /* ObjectRepositoryTests.mm in Sources */,
+				091F3A591755452200B26106 /* ObjectConstructorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1094,7 +1103,6 @@
 				0932162A17418CAD0066CBB5 /* Helper.mm in Sources */,
 				0932162B17418CAD0066CBB5 /* PhysicsSprite.mm in Sources */,
 				09321630174190070066CBB5 /* GameplayScene.mm in Sources */,
-				093216341741924E0066CBB5 /* GameplayLayer.mm in Sources */,
 				093216381741939C0066CBB5 /* BackgroundLayer.mm in Sources */,
 				0932163B174194D10066CBB5 /* GLES-Render.mm in Sources */,
 				09A173E31742BF24000AD779 /* Ball.mm in Sources */,
@@ -1106,7 +1114,7 @@
 				09A181E117492CA00020AAFC /* MenuScene.mm in Sources */,
 				09A181E5174935160020AAFC /* MenuLayer.mm in Sources */,
 				09A18201174981CF0020AAFC /* ObjectRepository.mm in Sources */,
-				09A18204174982040020AAFC /* ObjectConstructor.mm in Sources */,
+				09A18204174982040020AAFC /* ObjectFactory.mm in Sources */,
 				099B0E0E174A2D0E00525BA3 /* LevelSelectionScene.mm in Sources */,
 				099B0E12174A558600525BA3 /* LevelPackSpecification.mm in Sources */,
 				099B0E16174A57CD00525BA3 /* LevelPackSelectionScene.mm in Sources */,
@@ -1115,7 +1123,9 @@
 				099B0E47174AB86800525BA3 /* LevelTile.mm in Sources */,
 				091F9C1D1752A34800104463 /* BasicLevelBuilder.mm in Sources */,
 				091F9C231752A9A600104463 /* LevelConstructionDirector.mm in Sources */,
-				097EE87F1754016B00D69F97 /* GameObject.m in Sources */,
+				097EE87F1754016B00D69F97 /* GameObject.mm in Sources */,
+				091F3A5C17554FA800B26106 /* Wall.mm in Sources */,
+				091F3A5F175557C300B26106 /* ObjectIdentifiers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1311,6 +1321,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DC9C33E713B5024400931BF2 /* BuildSettings-Debug-Mac.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 			};
 			name = Debug;
 		};
@@ -1318,6 +1329,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DC9C33E913B5024400931BF2 /* BuildSettings-Release-Mac.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 			};
 			name = Release;
 		};

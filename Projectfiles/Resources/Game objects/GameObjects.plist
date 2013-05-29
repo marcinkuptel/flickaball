@@ -9,5 +9,12 @@
 		<key>type</key>
 		<integer>0</integer>
 	</dict>
+	<key>002</key>
+	<dict>
+		<key>name</key>
+		<string>ball</string>
+		<key>type</key>
+		<integer>0</integer>
+	</dict>
 </dict>
 </plist>

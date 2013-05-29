@@ -8,12 +8,16 @@
 
 #import "BasicLevelBuilder.h"
 #import "GameplayScene.h"
-#import "GameplayLayer.h"
-
+#import "BackgroundLayer.h"
+#import "BallLayer.h"
+#import "BoardLayer.h"
+#import "GameObject.h"
+#import "ObjectFactory.h"
+#import "Ball.h"
 
 @interface BasicLevelBuilder ()
 
-@property (nonatomic, strong) GameplayLayer *gameplayLayer;
+@property (nonatomic, strong) GameplayScene *gameplayScene;
 
 @end
 
@@ -22,14 +26,26 @@
 
 #pragma mark - LevelBuilder protocol
 
-- (void) buildGameplayLayer
+- (void) buildGameplayScene
 {
-    if (self.gameplayLayer) {
+    if (self.gameplayScene) {
         [NSException raise: NSInternalInconsistencyException
-                    format: @"Gameplay layer already initialized!"];
+                    format: @"Gameplay scene already initialized!"];
     }
     
-    self.gameplayLayer = [[GameplayLayer alloc] init];
+    self.gameplayScene = [[GameplayScene alloc] init];
+}
+
+
+- (void) buildBackgroundLayer
+{
+    if (self.gameplayScene == nil) {
+        [NSException raise: NSInternalInconsistencyException
+                    format: @"Gameplay scene not initialized!"];
+    }
+    
+    BackgroundLayer *backgroundLayer = [[BackgroundLayer alloc] init];
+    [self.gameplayScene setBackgroundLayer: backgroundLayer];
 }
 
 
@@ -47,7 +63,11 @@
 
 - (void) buildBallLayer
 {
+    GameObject *ball = [[ObjectFactory sharedFactory] constructGameObjectWithID: FBBallObjectIdentifier
+                                                                          world: self.gameplayScene.world];
     
+    BallLayer *ballLayer = [[BallLayer alloc] initWithBall: (Ball*)ball];
+    [self.gameplayScene setBallLayer: ballLayer];
 }
 
 
@@ -55,8 +75,8 @@
 
 - (GameplayScene*) getGameplayScene
 {
-    GameplayScene *gameplayScene = [[GameplayScene alloc] init];
-    [gameplayScene addChild: self.gameplayLayer];
+    GameplayScene *gameplayScene = self.gameplayScene;
+    self.gameplayScene = nil;
     
     return gameplayScene;
 }

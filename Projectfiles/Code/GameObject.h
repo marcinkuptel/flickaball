@@ -7,7 +7,13 @@
 //
 
 #import "BodySprite.h"
+#import "ObjectFactory.h"
+#import "ObjectIdentifiers.h"
 
 @interface GameObject : BodySprite
+
++ (GameObject*) objectWithShape: (NSString*) shapeName
+                          world: (b2World*) world
+                     parameters: (NSDictionary*) parameters;
 
 @end
