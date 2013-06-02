@@ -8,5 +8,11 @@
 
 #import "ObjectIdentifiers.h"
 
-NSString * const FBWallObjectIdentifier = @"001";
 NSString * const FBBallObjectIdentifier = @"002";
+
+//walls
+NSString * const FBWallObjectIdentifier = @"001";
+
+//collectibles
+NSString * const FBRubyObjectIdentifier = @"003";
+

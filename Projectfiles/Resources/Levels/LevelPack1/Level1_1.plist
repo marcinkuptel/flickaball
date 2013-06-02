@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>worldObjects</key>
+	<array>
+		<dict>
+			<key>ID</key>
+			<string>001</string>
+			<key>position</key>
+			<string>{200, 200}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>001</string>
+			<key>position</key>
+			<string>{250, 200}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>001</string>
+			<key>position</key>
+			<string>{300, 200}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>001</string>
+			<key>position</key>
+			<string>{350, 200}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>001</string>
+			<key>position</key>
+			<string>{350, 300}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>001</string>
+			<key>position</key>
+			<string>{400, 300}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>001</string>
+			<key>position</key>
+			<string>{450, 300}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>001</string>
+			<key>position</key>
+			<string>{500, 300}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>001</string>
+			<key>position</key>
+			<string>{700, 500}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>001</string>
+			<key>position</key>
+			<string>{700, 450}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>001</string>
+			<key>position</key>
+			<string>{700, 400}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>001</string>
+			<key>position</key>
+			<string>{700, 350}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>003</string>
+			<key>position</key>
+			<string>{800, 350}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>003</string>
+			<key>position</key>
+			<string>{100, 550}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>003</string>
+			<key>position</key>
+			<string>{200, 350}</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>003</string>
+			<key>position</key>
+			<string>{400, 700}</string>
+		</dict>
+	</array>
+	<key>ballParameters</key>
+	<dict>
+		<key>position</key>
+		<string>{100, 100}</string>
+	</dict>
+</dict>
+</plist>

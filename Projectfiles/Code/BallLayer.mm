@@ -11,8 +11,8 @@
 
 #define MAX_BALL_DISTANCE_FROM_ORIGIN       100
 #define MAX_TOUCH_DISTANCE_FROM_ORIGIN      300
-#define BALL_SPEED_FACTOR                   300
-#define BALL_LINEAR_DAMPING                 0.1
+#define BALL_SPEED_FACTOR                   600
+#define BALL_LINEAR_DAMPING                 0.2
 
 typedef NS_ENUM(NSUInteger, GLBallFlickState)
 {
@@ -113,7 +113,6 @@ typedef NS_ENUM(NSUInteger, GLBallFlickState)
         self.ball.physicsBody->ApplyLinearImpulse(speedVector, self.ball.physicsBody->GetWorldCenter());
     }
 }
-
 
 
 @end

@@ -7,5 +7,12 @@
 //
 
 
-extern NSString * const FBWallObjectIdentifier;
 extern NSString * const FBBallObjectIdentifier;
+
+//walls
+extern NSString * const FBWallObjectIdentifier;
+
+//collectibles
+extern NSString * const FBRubyObjectIdentifier;
+
+

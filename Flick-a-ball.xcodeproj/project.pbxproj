@@ -27,18 +27,18 @@
 		093216381741939C0066CBB5 /* BackgroundLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 093216371741939C0066CBB5 /* BackgroundLayer.mm */; };
 		0932163B174194D10066CBB5 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09321639174194D10066CBB5 /* GLES-Render.mm */; };
 		094ADC8F1750C96700951374 /* LevelSpecificationTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 094ADC8E1750C96700951374 /* LevelSpecificationTests.mm */; };
-		094ADC94175120CD00951374 /* Level1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADC93175120CD00951374 /* Level1.plist */; };
-		094ADC96175120E700951374 /* Level2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADC95175120E700951374 /* Level2.plist */; };
-		094ADC98175121C600951374 /* Level3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADC97175121C600951374 /* Level3.plist */; };
-		094ADC9D1751228F00951374 /* Level3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADC991751228F00951374 /* Level3.plist */; };
-		094ADC9E1751228F00951374 /* Level4.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADC9A1751228F00951374 /* Level4.plist */; };
-		094ADC9F1751228F00951374 /* Level2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADC9B1751228F00951374 /* Level2.plist */; };
-		094ADCA01751228F00951374 /* Level1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADC9C1751228F00951374 /* Level1.plist */; };
-		094ADCA61751229C00951374 /* Level3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADCA11751229C00951374 /* Level3.plist */; };
-		094ADCA71751229C00951374 /* Level4.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADCA21751229C00951374 /* Level4.plist */; };
-		094ADCA81751229C00951374 /* Level5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADCA31751229C00951374 /* Level5.plist */; };
-		094ADCA91751229C00951374 /* Level2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADCA41751229C00951374 /* Level2.plist */; };
-		094ADCAA1751229C00951374 /* Level1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADCA51751229C00951374 /* Level1.plist */; };
+		094ADC94175120CD00951374 /* Level1_1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADC93175120CD00951374 /* Level1_1.plist */; };
+		094ADC96175120E700951374 /* Level1_2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADC95175120E700951374 /* Level1_2.plist */; };
+		094ADC98175121C600951374 /* Level1_3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADC97175121C600951374 /* Level1_3.plist */; };
+		094ADC9D1751228F00951374 /* Level2_3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADC991751228F00951374 /* Level2_3.plist */; };
+		094ADC9E1751228F00951374 /* Level2_4.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADC9A1751228F00951374 /* Level2_4.plist */; };
+		094ADC9F1751228F00951374 /* Level2_2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADC9B1751228F00951374 /* Level2_2.plist */; };
+		094ADCA01751228F00951374 /* Level2_1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADC9C1751228F00951374 /* Level2_1.plist */; };
+		094ADCA61751229C00951374 /* Level3_3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADCA11751229C00951374 /* Level3_3.plist */; };
+		094ADCA71751229C00951374 /* Level3_4.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADCA21751229C00951374 /* Level3_4.plist */; };
+		094ADCA81751229C00951374 /* Level3_5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADCA31751229C00951374 /* Level3_5.plist */; };
+		094ADCA91751229C00951374 /* Level3_2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADCA41751229C00951374 /* Level3_2.plist */; };
+		094ADCAA1751229C00951374 /* Level3_1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094ADCA51751229C00951374 /* Level3_1.plist */; };
 		097EE87C1753EC4C00D69F97 /* GameObjects.plist in Resources */ = {isa = PBXBuildFile; fileRef = 097EE87B1753EC4C00D69F97 /* GameObjects.plist */; };
 		097EE87F1754016B00D69F97 /* GameObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 097EE87E1754016B00D69F97 /* GameObject.mm */; };
 		099B0E0E174A2D0E00525BA3 /* LevelSelectionScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 099B0E0D174A2D0E00525BA3 /* LevelSelectionScene.mm */; };
@@ -79,6 +79,10 @@
 		09A181F817493ADC0020AAFC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09A181FA17493ADC0020AAFC /* Localizable.strings */; };
 		09A18201174981CF0020AAFC /* ObjectRepository.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09A18200174981CF0020AAFC /* ObjectRepository.mm */; };
 		09A18204174982040020AAFC /* ObjectFactory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09A18203174982040020AAFC /* ObjectFactory.mm */; };
+		09E4F96F175B81A200F8C805 /* ballHitsWall.wav in Resources */ = {isa = PBXBuildFile; fileRef = 09E4F96E175B81A200F8C805 /* ballHitsWall.wav */; };
+		09E4F978175BC4BF00F8C805 /* Ruby.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09E4F977175BC4BF00F8C805 /* Ruby.mm */; };
+		09E4F97D175BCA2300F8C805 /* particleTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E4F97B175BCA2300F8C805 /* particleTexture.png */; };
+		09E4F97E175BCA2300F8C805 /* StarBurst.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09E4F97C175BCA2300F8C805 /* StarBurst.plist */; };
 		DC21B88B1511078F00FD4891 /* fps_images-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B8881511078F00FD4891 /* fps_images-hd.png */; };
 		DC21B88C1511078F00FD4891 /* fps_images-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B8891511078F00FD4891 /* fps_images-ipadhd.png */; };
 		DC21B88D1511078F00FD4891 /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B88A1511078F00FD4891 /* fps_images.png */; };
@@ -177,18 +181,18 @@
 		0932163A174194D10066CBB5 /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GLES-Render.h"; path = "Code/Base/GLES-Render.h"; sourceTree = "<group>"; };
 		094ADC8D1750C96700951374 /* LevelSpecificationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelSpecificationTests.h; path = Tests/LevelSpecificationTests.h; sourceTree = "<group>"; };
 		094ADC8E1750C96700951374 /* LevelSpecificationTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LevelSpecificationTests.mm; path = Tests/LevelSpecificationTests.mm; sourceTree = "<group>"; };
-		094ADC93175120CD00951374 /* Level1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level1.plist; path = Levels/LevelPack1/Level1.plist; sourceTree = "<group>"; };
-		094ADC95175120E700951374 /* Level2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level2.plist; path = Levels/LevelPack1/Level2.plist; sourceTree = "<group>"; };
-		094ADC97175121C600951374 /* Level3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level3.plist; path = Levels/LevelPack1/Level3.plist; sourceTree = "<group>"; };
-		094ADC991751228F00951374 /* Level3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level3.plist; path = Levels/LevelPack2/Level3.plist; sourceTree = "<group>"; };
-		094ADC9A1751228F00951374 /* Level4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level4.plist; path = Levels/LevelPack2/Level4.plist; sourceTree = "<group>"; };
-		094ADC9B1751228F00951374 /* Level2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level2.plist; path = Levels/LevelPack2/Level2.plist; sourceTree = "<group>"; };
-		094ADC9C1751228F00951374 /* Level1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level1.plist; path = Levels/LevelPack2/Level1.plist; sourceTree = "<group>"; };
-		094ADCA11751229C00951374 /* Level3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level3.plist; path = Levels/LevelPack3/Level3.plist; sourceTree = "<group>"; };
-		094ADCA21751229C00951374 /* Level4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level4.plist; path = Levels/LevelPack3/Level4.plist; sourceTree = "<group>"; };
-		094ADCA31751229C00951374 /* Level5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level5.plist; path = Levels/LevelPack3/Level5.plist; sourceTree = "<group>"; };
-		094ADCA41751229C00951374 /* Level2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level2.plist; path = Levels/LevelPack3/Level2.plist; sourceTree = "<group>"; };
-		094ADCA51751229C00951374 /* Level1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level1.plist; path = Levels/LevelPack3/Level1.plist; sourceTree = "<group>"; };
+		094ADC93175120CD00951374 /* Level1_1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level1_1.plist; path = Levels/LevelPack1/Level1_1.plist; sourceTree = "<group>"; };
+		094ADC95175120E700951374 /* Level1_2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level1_2.plist; path = Levels/LevelPack1/Level1_2.plist; sourceTree = "<group>"; };
+		094ADC97175121C600951374 /* Level1_3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level1_3.plist; path = Levels/LevelPack1/Level1_3.plist; sourceTree = "<group>"; };
+		094ADC991751228F00951374 /* Level2_3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level2_3.plist; path = Levels/LevelPack2/Level2_3.plist; sourceTree = "<group>"; };
+		094ADC9A1751228F00951374 /* Level2_4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level2_4.plist; path = Levels/LevelPack2/Level2_4.plist; sourceTree = "<group>"; };
+		094ADC9B1751228F00951374 /* Level2_2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level2_2.plist; path = Levels/LevelPack2/Level2_2.plist; sourceTree = "<group>"; };
+		094ADC9C1751228F00951374 /* Level2_1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level2_1.plist; path = Levels/LevelPack2/Level2_1.plist; sourceTree = "<group>"; };
+		094ADCA11751229C00951374 /* Level3_3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level3_3.plist; path = Levels/LevelPack3/Level3_3.plist; sourceTree = "<group>"; };
+		094ADCA21751229C00951374 /* Level3_4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level3_4.plist; path = Levels/LevelPack3/Level3_4.plist; sourceTree = "<group>"; };
+		094ADCA31751229C00951374 /* Level3_5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level3_5.plist; path = Levels/LevelPack3/Level3_5.plist; sourceTree = "<group>"; };
+		094ADCA41751229C00951374 /* Level3_2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level3_2.plist; path = Levels/LevelPack3/Level3_2.plist; sourceTree = "<group>"; };
+		094ADCA51751229C00951374 /* Level3_1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level3_1.plist; path = Levels/LevelPack3/Level3_1.plist; sourceTree = "<group>"; };
 		097EE87B1753EC4C00D69F97 /* GameObjects.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = GameObjects.plist; path = "Game objects/GameObjects.plist"; sourceTree = "<group>"; };
 		097EE87D1754016B00D69F97 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameObject.h; path = Code/GameObject.h; sourceTree = "<group>"; };
 		097EE87E1754016B00D69F97 /* GameObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GameObject.mm; path = Code/GameObject.mm; sourceTree = "<group>"; };
@@ -253,6 +257,12 @@
 		09A18200174981CF0020AAFC /* ObjectRepository.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ObjectRepository.mm; path = Code/ObjectRepository.mm; sourceTree = "<group>"; };
 		09A18202174982040020AAFC /* ObjectFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjectFactory.h; path = Code/ObjectFactory.h; sourceTree = "<group>"; };
 		09A18203174982040020AAFC /* ObjectFactory.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ObjectFactory.mm; path = Code/ObjectFactory.mm; sourceTree = "<group>"; };
+		09E4F96E175B81A200F8C805 /* ballHitsWall.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = ballHitsWall.wav; path = Sounds/ballHitsWall.wav; sourceTree = "<group>"; };
+		09E4F976175BC4BF00F8C805 /* Ruby.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ruby.h; path = Code/Ruby.h; sourceTree = "<group>"; };
+		09E4F977175BC4BF00F8C805 /* Ruby.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Ruby.mm; path = Code/Ruby.mm; sourceTree = "<group>"; };
+		09E4F97B175BCA2300F8C805 /* particleTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = particleTexture.png; path = "Particle effects/Star burst/particleTexture.png"; sourceTree = "<group>"; };
+		09E4F97C175BCA2300F8C805 /* StarBurst.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = StarBurst.plist; path = "Particle effects/Star burst/StarBurst.plist"; sourceTree = "<group>"; };
+		09E4F97F175BD7D400F8C805 /* GameObjectRemover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameObjectRemover.h; path = Code/GameObjectRemover.h; sourceTree = "<group>"; };
 		DC21B8881511078F00FD4891 /* fps_images-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fps_images-hd.png"; sourceTree = "<group>"; };
 		DC21B8891511078F00FD4891 /* fps_images-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fps_images-ipadhd.png"; sourceTree = "<group>"; };
 		DC21B88A1511078F00FD4891 /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fps_images.png; sourceTree = "<group>"; };
@@ -433,6 +443,7 @@
 		0932162C17418F530066CBB5 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				09E4F97F175BD7D400F8C805 /* GameObjectRemover.h */,
 				0932162D17418FCB0066CBB5 /* Gameplay Scene */,
 				099B0E13174A57B200525BA3 /* Level Pack Selection Scene */,
 				09A181C51748D9700020AAFC /* Level Selection Scene */,
@@ -502,9 +513,8 @@
 		094ADC9017511F8300951374 /* LevelPack1 */ = {
 			isa = PBXGroup;
 			children = (
-				094ADC93175120CD00951374 /* Level1.plist */,
-				094ADC95175120E700951374 /* Level2.plist */,
-				094ADC97175121C600951374 /* Level3.plist */,
+				099B0E3E174AB46500525BA3 /* LevelPack1.plist */,
+				09E4F971175B839C00F8C805 /* Levels */,
 			);
 			name = LevelPack1;
 			sourceTree = "<group>";
@@ -512,10 +522,8 @@
 		094ADC9117511F8D00951374 /* LevelPack2 */ = {
 			isa = PBXGroup;
 			children = (
-				094ADC991751228F00951374 /* Level3.plist */,
-				094ADC9A1751228F00951374 /* Level4.plist */,
-				094ADC9B1751228F00951374 /* Level2.plist */,
-				094ADC9C1751228F00951374 /* Level1.plist */,
+				099B0E40174AB47300525BA3 /* LevelPack2.plist */,
+				09E4F972175B83A900F8C805 /* Levels */,
 			);
 			name = LevelPack2;
 			sourceTree = "<group>";
@@ -523,11 +531,8 @@
 		094ADC9217511F9400951374 /* LevelPack3 */ = {
 			isa = PBXGroup;
 			children = (
-				094ADCA11751229C00951374 /* Level3.plist */,
-				094ADCA21751229C00951374 /* Level4.plist */,
-				094ADCA31751229C00951374 /* Level5.plist */,
-				094ADCA41751229C00951374 /* Level2.plist */,
-				094ADCA51751229C00951374 /* Level1.plist */,
+				099B0E42174AB48A00525BA3 /* LevelPack3.plist */,
+				09E4F973175B83B700F8C805 /* Levels */,
 			);
 			name = LevelPack3;
 			sourceTree = "<group>";
@@ -599,10 +604,10 @@
 		09A173E01742BECE000AD779 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				09E4F975175BC4AE00F8C805 /* Collectibles */,
+				09E4F974175BC49B00F8C805 /* Board elements */,
 				09A173E11742BF24000AD779 /* Ball.h */,
 				09A173E21742BF24000AD779 /* Ball.mm */,
-				091F3A5A17554FA800B26106 /* Wall.h */,
-				091F3A5B17554FA800B26106 /* Wall.mm */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -677,9 +682,6 @@
 				094ADC9117511F8D00951374 /* LevelPack2 */,
 				094ADC9017511F8300951374 /* LevelPack1 */,
 				09A181D71749282F0020AAFC /* LevelPacks.plist */,
-				099B0E3E174AB46500525BA3 /* LevelPack1.plist */,
-				099B0E40174AB47300525BA3 /* LevelPack2.plist */,
-				099B0E42174AB48A00525BA3 /* LevelPack3.plist */,
 			);
 			name = Levels;
 			sourceTree = "<group>";
@@ -743,6 +745,82 @@
 				097EE87B1753EC4C00D69F97 /* GameObjects.plist */,
 			);
 			name = "Game objects";
+			sourceTree = "<group>";
+		};
+		09E4F96D175B817D00F8C805 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				09E4F96E175B81A200F8C805 /* ballHitsWall.wav */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		09E4F971175B839C00F8C805 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				094ADC93175120CD00951374 /* Level1_1.plist */,
+				094ADC95175120E700951374 /* Level1_2.plist */,
+				094ADC97175121C600951374 /* Level1_3.plist */,
+			);
+			name = Levels;
+			sourceTree = "<group>";
+		};
+		09E4F972175B83A900F8C805 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				094ADC991751228F00951374 /* Level2_3.plist */,
+				094ADC9A1751228F00951374 /* Level2_4.plist */,
+				094ADC9B1751228F00951374 /* Level2_2.plist */,
+				094ADC9C1751228F00951374 /* Level2_1.plist */,
+			);
+			name = Levels;
+			sourceTree = "<group>";
+		};
+		09E4F973175B83B700F8C805 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				094ADCA11751229C00951374 /* Level3_3.plist */,
+				094ADCA21751229C00951374 /* Level3_4.plist */,
+				094ADCA31751229C00951374 /* Level3_5.plist */,
+				094ADCA41751229C00951374 /* Level3_2.plist */,
+				094ADCA51751229C00951374 /* Level3_1.plist */,
+			);
+			name = Levels;
+			sourceTree = "<group>";
+		};
+		09E4F974175BC49B00F8C805 /* Board elements */ = {
+			isa = PBXGroup;
+			children = (
+				091F3A5A17554FA800B26106 /* Wall.h */,
+				091F3A5B17554FA800B26106 /* Wall.mm */,
+			);
+			name = "Board elements";
+			sourceTree = "<group>";
+		};
+		09E4F975175BC4AE00F8C805 /* Collectibles */ = {
+			isa = PBXGroup;
+			children = (
+				09E4F976175BC4BF00F8C805 /* Ruby.h */,
+				09E4F977175BC4BF00F8C805 /* Ruby.mm */,
+			);
+			name = Collectibles;
+			sourceTree = "<group>";
+		};
+		09E4F979175BCA0C00F8C805 /* Particle effects */ = {
+			isa = PBXGroup;
+			children = (
+				09E4F97A175BCA1500F8C805 /* Star burst */,
+			);
+			name = "Particle effects";
+			sourceTree = "<group>";
+		};
+		09E4F97A175BCA1500F8C805 /* Star burst */ = {
+			isa = PBXGroup;
+			children = (
+				09E4F97B175BCA2300F8C805 /* particleTexture.png */,
+				09E4F97C175BCA2300F8C805 /* StarBurst.plist */,
+			);
+			name = "Star burst";
 			sourceTree = "<group>";
 		};
 		DCC1A0D613A94EC0005BD75D = {
@@ -853,6 +931,8 @@
 		DCC1A39413A94F1A005BD75D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				09E4F979175BCA0C00F8C805 /* Particle effects */,
+				09E4F96D175B817D00F8C805 /* Sounds */,
 				09A18205174982E80020AAFC /* Game objects */,
 				09A181EF174939890020AAFC /* Languages */,
 				09A181E6174937600020AAFC /* Fonts */,
@@ -1015,19 +1095,22 @@
 				099B0E3F174AB46500525BA3 /* LevelPack1.plist in Resources */,
 				099B0E41174AB47300525BA3 /* LevelPack2.plist in Resources */,
 				099B0E43174AB48A00525BA3 /* LevelPack3.plist in Resources */,
-				094ADC94175120CD00951374 /* Level1.plist in Resources */,
-				094ADC96175120E700951374 /* Level2.plist in Resources */,
-				094ADC98175121C600951374 /* Level3.plist in Resources */,
-				094ADC9D1751228F00951374 /* Level3.plist in Resources */,
-				094ADC9E1751228F00951374 /* Level4.plist in Resources */,
-				094ADC9F1751228F00951374 /* Level2.plist in Resources */,
-				094ADCA01751228F00951374 /* Level1.plist in Resources */,
-				094ADCA61751229C00951374 /* Level3.plist in Resources */,
-				094ADCA71751229C00951374 /* Level4.plist in Resources */,
-				094ADCA81751229C00951374 /* Level5.plist in Resources */,
-				094ADCA91751229C00951374 /* Level2.plist in Resources */,
-				094ADCAA1751229C00951374 /* Level1.plist in Resources */,
+				094ADC94175120CD00951374 /* Level1_1.plist in Resources */,
+				094ADC96175120E700951374 /* Level1_2.plist in Resources */,
+				094ADC98175121C600951374 /* Level1_3.plist in Resources */,
+				094ADC9D1751228F00951374 /* Level2_3.plist in Resources */,
+				094ADC9E1751228F00951374 /* Level2_4.plist in Resources */,
+				094ADC9F1751228F00951374 /* Level2_2.plist in Resources */,
+				094ADCA01751228F00951374 /* Level2_1.plist in Resources */,
+				094ADCA61751229C00951374 /* Level3_3.plist in Resources */,
+				094ADCA71751229C00951374 /* Level3_4.plist in Resources */,
+				094ADCA81751229C00951374 /* Level3_5.plist in Resources */,
+				094ADCA91751229C00951374 /* Level3_2.plist in Resources */,
+				094ADCAA1751229C00951374 /* Level3_1.plist in Resources */,
 				097EE87C1753EC4C00D69F97 /* GameObjects.plist in Resources */,
+				09E4F96F175B81A200F8C805 /* ballHitsWall.wav in Resources */,
+				09E4F97D175BCA2300F8C805 /* particleTexture.png in Resources */,
+				09E4F97E175BCA2300F8C805 /* StarBurst.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1126,6 +1209,7 @@
 				097EE87F1754016B00D69F97 /* GameObject.mm in Sources */,
 				091F3A5C17554FA800B26106 /* Wall.mm in Sources */,
 				091F3A5F175557C300B26106 /* ObjectIdentifiers.m in Sources */,
+				09E4F978175BC4BF00F8C805 /* Ruby.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

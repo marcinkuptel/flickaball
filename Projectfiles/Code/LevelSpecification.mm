@@ -12,7 +12,8 @@ NSString * const LSLevelNameKey     = @"levelName";
 NSString * const LSLevelFilenameKey = @"levelFile";
 
 //Level file keys
-NSString * const LSWorldObjectsKey = @"worldObjects";
+NSString * const LSWorldObjectsKey      = @"worldObjects";
+NSString * const LSBallParametersKey    = @"ballParameters";
 
 
 @interface LevelSpecification ()
@@ -20,6 +21,7 @@ NSString * const LSWorldObjectsKey = @"worldObjects";
 @property (nonatomic, copy) NSString *levelName;
 @property (nonatomic, copy) NSString *levelFilename;
 @property (nonatomic, strong) NSArray *worldObjects;
+@property (nonatomic, strong) NSDictionary *ballParameters;
 
 @end
 
@@ -39,7 +41,7 @@ NSString * const LSWorldObjectsKey = @"worldObjects";
 - (void) loadLevelSpecificationFromFile: (NSString*) filename
 {
     NSParameterAssert(filename);
-    
+
     NSString *path = [[NSBundle mainBundle] pathForResource: filename
                                                      ofType: @"plist"];
     
@@ -52,6 +54,10 @@ NSString * const LSWorldObjectsKey = @"worldObjects";
         }
         
         self.worldObjects = rootObject[LSWorldObjectsKey];
+        self.ballParameters = rootObject[LSBallParametersKey];
+        
+        NSAssert(_worldObjects, @"World objects not initialized!");
+        NSAssert(_ballParameters, @"Ball parameters not initialized!");
     }
 }
 
@@ -64,6 +70,15 @@ NSString * const LSWorldObjectsKey = @"worldObjects";
         [self loadLevelSpecificationFromFile: self.levelFilename];
     }
     return _worldObjects;
+}
+
+
+- (NSDictionary*) ballParameters
+{
+    if (_ballParameters == nil) {
+        [self loadLevelSpecificationFromFile: self.levelFilename];
+    }
+    return _ballParameters;
 }
 
 @end

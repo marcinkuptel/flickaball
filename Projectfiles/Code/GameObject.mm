@@ -8,6 +8,8 @@
 
 #import "GameObject.h"
 
+NSString * const GOParameterPositionKey = @"position";
+
 @implementation GameObject
 
 + (GameObject*) objectWithShape: (NSString*) shapeName

@@ -4,15 +4,22 @@
 <dict>
 	<key>001</key>
 	<dict>
-		<key>name</key>
+		<key>shape</key>
 		<string>wall</string>
 		<key>type</key>
 		<integer>0</integer>
 	</dict>
 	<key>002</key>
 	<dict>
-		<key>name</key>
+		<key>shape</key>
 		<string>ball</string>
+		<key>type</key>
+		<integer>0</integer>
+	</dict>
+	<key>003</key>
+	<dict>
+		<key>shape</key>
+		<string>ruby</string>
 		<key>type</key>
 		<integer>0</integer>
 	</dict>

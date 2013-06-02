@@ -7,26 +7,12 @@
 //
 
 #import "Ball.h"
+#import "SimpleAudioEngine.h"
+
+#define BALL_SHAPE_NAME             @"ball"
+#define BALL_HITS_WALL_SOUND        @"ballHitsWall.wav"
 
 @implementation Ball
-
-+ (id) ballWithWorld: (b2World*) world position: (CGPoint) position
-{
-    return [[self alloc] initWithWorld: world position: position];
-}
-
-
-- (id) initWithWorld: (b2World*) world position: (CGPoint) position
-{
-    self = [super initWithShape: @"ball" inWorld: world];
-    if (self) {
-        
-        self.physicsBody->SetTransform([Helper toMeters: position], 0);
-        self.physicsBody->SetType(b2_dynamicBody);
-    }
-    return self;
-}
-
 
 + (void) load
 {
@@ -38,8 +24,30 @@
                           world: (b2World *)world
                      parameters: (NSDictionary *)parameters
 {
-    Ball *ball = [[Ball alloc] initWithWorld: world position: [CCDirector sharedDirector].screenCenter];
+    CGPoint position = CGPointFromString(parameters[GOParameterPositionKey]);
+    Ball *ball = [[Ball alloc] initWithWorld: world position: position];
     return ball;
 }
+
+
+- (id) initWithWorld: (b2World*) world position: (CGPoint) position
+{
+    self = [super initWithShape:BALL_SHAPE_NAME inWorld: world];
+    if (self) {
+        
+        self.physicsBody->SetTransform([Helper toMeters: position], 0);
+        self.physicsBody->SetType(b2_dynamicBody);
+    }
+    return self;
+}
+
+
+#pragma mark - Contacts
+
+- (void) beginContactWithWall: (Contact*) contact
+{
+    [[SimpleAudioEngine sharedEngine] playEffect: BALL_HITS_WALL_SOUND];
+}
+
 
 @end

@@ -33,6 +33,13 @@ typedef NS_ENUM(NSUInteger, GSLayerOrder)
 };
 
 
+@interface GameplayScene()
+
+@property (nonatomic, strong) NSMutableSet *objectsToRemove;
+
+@end
+
+
 @implementation GameplayScene
 
 - (id) init
@@ -58,6 +65,8 @@ typedef NS_ENUM(NSUInteger, GSLayerOrder)
     _world = NULL;
     delete _debugDraw;
     _debugDraw = NULL;
+    delete _contactListener;
+    _contactListener = NULL;
 }
 
 
@@ -117,6 +126,9 @@ typedef NS_ENUM(NSUInteger, GSLayerOrder)
     _world->SetAllowSleeping(true);
     _world->SetContinuousPhysics(true);
     
+    _contactListener = new ContactListener();
+    _world->SetContactListener(_contactListener);
+    
     _debugDraw = new GLESDebugDraw(PTM_RATIO);
     _world->SetDebugDraw(_debugDraw);
     
@@ -158,6 +170,9 @@ typedef NS_ENUM(NSUInteger, GSLayerOrder)
 
 -(void)afterStep {
 	// process collisions and result from callbacks called by the step
+
+    //remove marked objects
+    [self removeMarkedObjects];
 }
 
 
@@ -178,5 +193,28 @@ typedef NS_ENUM(NSUInteger, GSLayerOrder)
 	}
 	_world->ClearForces ();
 }
+
+
+#pragma mark - GameObjectRemover
+
+- (void) markObjectForRemoval:(CCSprite*) gameObject
+{
+    if (self.objectsToRemove == nil) {
+        self.objectsToRemove = [NSMutableSet set];
+    }
+    
+    [self.objectsToRemove addObject: gameObject];
+}
+
+
+- (void) removeMarkedObjects
+{
+    for (CCSprite *gameObject in self.objectsToRemove) {
+        [gameObject removeFromParent];
+    }
+    
+    [self.objectsToRemove removeAllObjects];
+}
+
 
 @end

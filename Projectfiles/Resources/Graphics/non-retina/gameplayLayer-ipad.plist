@@ -17,6 +17,19 @@
                 <key>sourceSize</key>
                 <string>{45,45}</string>
             </dict>
+            <key>ruby</key>
+            <dict>
+                <key>frame</key>
+                <string>{{49,54},{40,40}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{40,40}}</string>
+                <key>sourceSize</key>
+                <string>{40,40}</string>
+            </dict>
             <key>wall</key>
             <dict>
                 <key>frame</key>
@@ -38,9 +51,9 @@
             <key>realTextureFileName</key>
             <string>gameplayLayer-ipad.png</string>
             <key>size</key>
-            <string>{64,128}</string>
+            <string>{128,128}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:d534bcfbe331e764c98b165f3135b662$</string>
+            <string>$TexturePacker:SmartUpdate:9157ad27145714bffc07f4bf82355cd2$</string>
             <key>textureFileName</key>
             <string>gameplayLayer-ipad.png</string>
         </dict>

@@ -11,6 +11,7 @@
 @interface LevelSpecification : NSObject
 
 @property (nonatomic, strong, readonly) NSArray *worldObjects;
+@property (nonatomic, strong, readonly) NSDictionary *ballParameters;
 
 - (id) initWithDictionary: (NSDictionary*) dictionary;
 
