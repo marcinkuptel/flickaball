@@ -54,7 +54,10 @@
 -(void) dealloc
 {
     // remove the body from the world
-    physicsBody->GetWorld()->DestroyBody(physicsBody);
+    if (physicsBody) {
+        physicsBody->GetWorld()->DestroyBody(physicsBody);
+    }
+    
 }
 
 @end

@@ -15,6 +15,7 @@
 @class BackgroundLayer;
 @class BallLayer;
 @class BoardLayer;
+@class ControlsLayer;
 
 /**
  This scene is responsible for creating the world object and advancing
@@ -31,5 +32,6 @@
 @property (nonatomic, strong) BackgroundLayer *backgroundLayer;
 @property (nonatomic, strong) BoardLayer *boardLayer;
 @property (nonatomic, strong) BallLayer *ballLayer;
+@property (nonatomic, strong) ControlsLayer *controlsLayer;
 
 @end

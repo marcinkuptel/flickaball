@@ -10,6 +10,7 @@
 #import "BallLayer.h"
 #import "BackgroundLayer.h"
 #import "BoardLayer.h"
+#import "ControlsLayer.h"
 #import "Helper.h"
 
 const float32 FIXED_TIMESTEP = 1.0f / 60.0f;
@@ -29,7 +30,8 @@ typedef NS_ENUM(NSUInteger, GSLayerOrder)
 {
     GSLayerOrderBackground = 0,
     GSLayerOrderBoard,
-    GSLayerOrderBall
+    GSLayerOrderBall,
+    GSLayerOrderControls
 };
 
 
@@ -46,9 +48,6 @@ typedef NS_ENUM(NSUInteger, GSLayerOrder)
 {
     self = [super init];
     if (self) {
-        // pre load the sprite frames from the texture atlas
-        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"gameplayLayer.plist"];
-        
         // load physics definitions
         [[GB2ShapeCache sharedShapeCache] addShapesWithFile:@"physics-ipadhd.plist"];
         
@@ -112,6 +111,16 @@ typedef NS_ENUM(NSUInteger, GSLayerOrder)
         [self removeChild: _ballLayer];
         _ballLayer = ballLayer;
         [self addChild: _ballLayer z: GSLayerOrderBall];
+    }
+}
+
+
+- (void) setControlsLayer:(ControlsLayer *)controlsLayer
+{
+    if (_controlsLayer != controlsLayer) {
+        [self removeChild: _controlsLayer];
+        _controlsLayer = controlsLayer;
+        [self addChild: _controlsLayer z: GSLayerOrderControls];
     }
 }
 

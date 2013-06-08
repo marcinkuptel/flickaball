@@ -126,7 +126,7 @@
     
     [constructionDirector construct];
     CCScene *gameplayScene = (CCScene*)[levelBuilder getGameplayScene];
-    [[CCDirector sharedDirector] replaceScene: gameplayScene];
+    [[CCDirector sharedDirector] pushScene: gameplayScene];
 }
 
 @end

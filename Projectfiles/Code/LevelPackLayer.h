@@ -7,11 +7,22 @@
 //
 
 @class LevelPackSpecification;
+@protocol LevelPackLayerDelegate;
 
-@interface LevelPackLayer : CCLayer {
-    
-}
+@interface LevelPackLayer : CCLayer<CCTouchOneByOneDelegate>
+
+@property (nonatomic, weak) id<LevelPackLayerDelegate> delegate;
+@property (nonatomic, assign) NSUInteger index;
 
 - (id) initWithLevelPackSpecification: (LevelPackSpecification*) levelPackSpecification;
+
+@end
+
+
+@protocol LevelPackLayerDelegate <NSObject>
+
+@optional
+
+- (void) didSelectLevelPackLayer: (LevelPackLayer*) layer;
 
 @end

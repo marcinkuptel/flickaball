@@ -15,6 +15,10 @@
 {
     self = [super init];
     if (self) {
+        
+        // pre load the sprite frames from the texture atlas
+        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"gameplayLayer.plist"];
+        
         _menuLayer = [[MenuLayer alloc] init];
         [self addChild: _menuLayer];
     }

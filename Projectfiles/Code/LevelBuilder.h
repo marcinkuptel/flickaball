@@ -15,7 +15,7 @@
 - (void) buildGameplayScene;
 - (void) buildBackgroundLayer;
 - (void) buildBoardLayerWithWorldObjects: (NSArray*) worldObjects;
-- (void) buildUserControlsLayer;
+- (void) buildControlsLayer;
 - (void) buildBallLayerWithBallParameters: (NSDictionary*) ballParameters;
 
 @end

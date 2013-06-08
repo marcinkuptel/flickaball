@@ -11,6 +11,7 @@
 #import "BackgroundLayer.h"
 #import "BallLayer.h"
 #import "BoardLayer.h"
+#import "ControlsLayer.h"
 #import "GameObject.h"
 #import "ObjectFactory.h"
 #import "Ball.h"
@@ -72,9 +73,10 @@
 }
 
 
-- (void) buildUserControlsLayer
+- (void) buildControlsLayer
 {
-    
+    ControlsLayer *controlsLayer = [[ControlsLayer alloc] init];
+    [self.gameplayScene setControlsLayer: controlsLayer];
 }
 
 

@@ -8,6 +8,15 @@
 
 #import "LevelPackLayer.h"
 #import "LevelPackSpecification.h"
+#import "Helper.h"
+
+
+@interface LevelPackLayer ()
+
+@property (nonatomic, weak) CCLabelBMFont *titleLabel;
+
+@end
+
 
 @implementation LevelPackLayer
 
@@ -19,9 +28,45 @@
                                                                      fntFile: @"MenuFont.fnt"];
         levelPackName.position = self.boundingBoxCenter;
         [self addChild: levelPackName];
+        self.titleLabel = levelPackName;
         
+        [[CCDirector sharedDirector].touchDispatcher addTargetedDelegate: self
+                                                                priority: 0
+                                                         swallowsTouches: NO];
     }
     return self;
+}
+
+
+- (void) cleanup
+{
+    [super cleanup];
+    [[CCDirector sharedDirector].touchDispatcher removeDelegate: self];
+}
+
+
+#pragma mark - Touches
+
+- (BOOL) ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event
+{
+    CGPoint touchLocation = [Helper locationFromTouch: touch];
+    CGPoint locationInNodeSpace = [self.titleLabel convertToNodeSpace: touchLocation];
+    
+    CGRect bbox = CGRectMake(0, 0, self.titleLabel.contentSize.width, self.titleLabel.contentSize.height);
+    
+    if (CGRectContainsPoint(bbox, locationInNodeSpace)) {
+        return YES;
+    }else{
+        return NO;
+    }
+}
+
+
+- (void) ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event
+{
+    if ([self.delegate respondsToSelector:@selector(didSelectLevelPackLayer:)]) {
+        [self.delegate didSelectLevelPackLayer: self];
+    }
 }
 
 @end

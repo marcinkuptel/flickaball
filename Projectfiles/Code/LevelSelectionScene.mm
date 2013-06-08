@@ -8,6 +8,7 @@
 
 #import "LevelSelectionScene.h"
 #import "LevelPackContentsLayer.h"
+#import "ClickableNode.h"
 
 #define LEVEL_TILES_PER_LAYER           20
 #define SCROLL_LAYER_WIDTH_OFFSET       20
@@ -32,6 +33,7 @@
         _scrollLayer = [[CCScrollLayer alloc] initWithLayers: levelPackContentsLayers
                                                  widthOffset: SCROLL_LAYER_WIDTH_OFFSET];
         [self addChild: _scrollLayer];
+        [self addBackButton];
     }
     return self;
 }
@@ -60,6 +62,28 @@
     
     return [NSArray arrayWithArray: contentsLayers];
 }
+
+
+#pragma mark - Back button
+
+- (void) addBackButton
+{
+    id block = ^(id sender){
+        [[CCDirector sharedDirector] popScene];
+    };
+    
+    ClickableNode *backButton = [ClickableNode nodeWithName: @"arrowBack"
+                                                      block: block];
+    CGFloat x = backButton.boundingBox.size.width/2;
+    
+    CGSize winSize = [[CCDirector sharedDirector] winSize];
+    
+    CGFloat y = winSize.height - backButton.boundingBox.size.height/2;
+    backButton.position = ccp(x, y);
+    
+    [self addChild: backButton];
+}
+
 
 #pragma mark - CCScrollLayerDelegate
 

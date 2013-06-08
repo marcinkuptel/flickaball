@@ -50,7 +50,7 @@
         
         NSArray *levelPackSpecifications = [[LevelLoader sharedLoader] levelPackSpecifications];
         LevelPackSelectionScene *levelPackSelection = [[LevelPackSelectionScene alloc] initWithLevelPackSpecifications: levelPackSpecifications];
-        [[CCDirector sharedDirector] replaceScene: levelPackSelection];
+        [[CCDirector sharedDirector] pushScene: levelPackSelection];
         
     }];
     

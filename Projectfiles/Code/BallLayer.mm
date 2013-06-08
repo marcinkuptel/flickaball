@@ -53,6 +53,9 @@ typedef NS_ENUM(NSUInteger, GLBallFlickState)
 {
     [super cleanup];
     [[CCDirector sharedDirector].touchDispatcher removeDelegate: self];
+    
+    self.ball.physicsBody->GetWorld()->DestroyBody(self.ball.physicsBody);
+    self.ball.physicsBody = NULL;
 }
 
 
@@ -63,12 +66,17 @@ typedef NS_ENUM(NSUInteger, GLBallFlickState)
 {
     if (self.ballFlickState == GLBallFlickStateNone) {
         
-        //stop ball movement
-        self.ball.physicsBody->SetLinearVelocity(b2Vec2(0.0f,0.0f));
-        self.ball.physicsBody->SetAngularVelocity(0);
+        CGPoint touchLocation = [Helper locationFromTouch: touch];
         
-        self.ballFlickState = GLBallFlickStateAiming;
-        self.ballOrigin = [Helper locationFromTouch: touch];
+        if (CGRectContainsPoint(self.ball.boundingBox, touchLocation)) {
+            
+            //stop ball movement
+            self.ball.physicsBody->SetLinearVelocity(b2Vec2(0.0f,0.0f));
+            self.ball.physicsBody->SetAngularVelocity(0);
+            
+            self.ballFlickState = GLBallFlickStateAiming;
+            self.ballOrigin = [Helper locationFromTouch: touch];
+        }
     }
     
     return YES;

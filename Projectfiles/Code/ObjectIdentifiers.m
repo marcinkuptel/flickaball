@@ -8,6 +8,7 @@
 
 #import "ObjectIdentifiers.h"
 
+//ball
 NSString * const FBBallObjectIdentifier = @"002";
 
 //walls

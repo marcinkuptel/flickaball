@@ -65,7 +65,7 @@
 		09A173EE1742D1C1000AD779 /* physics-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09A173EC1742D1C1000AD779 /* physics-ipad.plist */; };
 		09A173EF1742D1C1000AD779 /* physics-ipadhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09A173ED1742D1C1000AD779 /* physics-ipadhd.plist */; };
 		09A181CD1748E1BB0020AAFC /* BallLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09A181CC1748E1BB0020AAFC /* BallLayer.mm */; };
-		09A181D117491C7F0020AAFC /* BoardLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A181D017491C7F0020AAFC /* BoardLayer.m */; };
+		09A181D117491C7F0020AAFC /* BoardLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09A181D017491C7F0020AAFC /* BoardLayer.mm */; };
 		09A181D5174927AF0020AAFC /* LevelLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09A181D4174927AF0020AAFC /* LevelLoader.mm */; };
 		09A181D81749282F0020AAFC /* LevelPacks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09A181D71749282F0020AAFC /* LevelPacks.plist */; };
 		09A181DB17492A3B0020AAFC /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09A181D917492A3B0020AAFC /* DataModel.xcdatamodeld */; };
@@ -79,6 +79,8 @@
 		09A181F817493ADC0020AAFC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09A181FA17493ADC0020AAFC /* Localizable.strings */; };
 		09A18201174981CF0020AAFC /* ObjectRepository.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09A18200174981CF0020AAFC /* ObjectRepository.mm */; };
 		09A18204174982040020AAFC /* ObjectFactory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09A18203174982040020AAFC /* ObjectFactory.mm */; };
+		09B79CC5176398C20020EDF3 /* ClickableNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09B79CC4176398C20020EDF3 /* ClickableNode.mm */; };
+		09B79CC91763AA170020EDF3 /* ControlsLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09B79CC81763AA170020EDF3 /* ControlsLayer.mm */; };
 		09E4F96F175B81A200F8C805 /* ballHitsWall.wav in Resources */ = {isa = PBXBuildFile; fileRef = 09E4F96E175B81A200F8C805 /* ballHitsWall.wav */; };
 		09E4F978175BC4BF00F8C805 /* Ruby.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09E4F977175BC4BF00F8C805 /* Ruby.mm */; };
 		09E4F97D175BCA2300F8C805 /* particleTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E4F97B175BCA2300F8C805 /* particleTexture.png */; };
@@ -229,7 +231,7 @@
 		09A181CB1748E1BB0020AAFC /* BallLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BallLayer.h; path = Code/BallLayer.h; sourceTree = "<group>"; };
 		09A181CC1748E1BB0020AAFC /* BallLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BallLayer.mm; path = Code/BallLayer.mm; sourceTree = "<group>"; };
 		09A181CF17491C7F0020AAFC /* BoardLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoardLayer.h; path = Code/BoardLayer.h; sourceTree = "<group>"; };
-		09A181D017491C7F0020AAFC /* BoardLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoardLayer.m; path = Code/BoardLayer.m; sourceTree = "<group>"; };
+		09A181D017491C7F0020AAFC /* BoardLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BoardLayer.mm; path = Code/BoardLayer.mm; sourceTree = "<group>"; };
 		09A181D3174927AF0020AAFC /* LevelLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelLoader.h; path = Code/LevelLoader.h; sourceTree = "<group>"; };
 		09A181D4174927AF0020AAFC /* LevelLoader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LevelLoader.mm; path = Code/LevelLoader.mm; sourceTree = "<group>"; };
 		09A181D71749282F0020AAFC /* LevelPacks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = LevelPacks.plist; path = Levels/LevelPacks.plist; sourceTree = "<group>"; };
@@ -257,6 +259,10 @@
 		09A18200174981CF0020AAFC /* ObjectRepository.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ObjectRepository.mm; path = Code/ObjectRepository.mm; sourceTree = "<group>"; };
 		09A18202174982040020AAFC /* ObjectFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjectFactory.h; path = Code/ObjectFactory.h; sourceTree = "<group>"; };
 		09A18203174982040020AAFC /* ObjectFactory.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ObjectFactory.mm; path = Code/ObjectFactory.mm; sourceTree = "<group>"; };
+		09B79CC3176398C20020EDF3 /* ClickableNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClickableNode.h; path = Code/ClickableNode.h; sourceTree = "<group>"; };
+		09B79CC4176398C20020EDF3 /* ClickableNode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ClickableNode.mm; path = Code/ClickableNode.mm; sourceTree = "<group>"; };
+		09B79CC71763AA170020EDF3 /* ControlsLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ControlsLayer.h; path = Code/ControlsLayer.h; sourceTree = "<group>"; };
+		09B79CC81763AA170020EDF3 /* ControlsLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ControlsLayer.mm; path = Code/ControlsLayer.mm; sourceTree = "<group>"; };
 		09E4F96E175B81A200F8C805 /* ballHitsWall.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = ballHitsWall.wav; path = Sounds/ballHitsWall.wav; sourceTree = "<group>"; };
 		09E4F976175BC4BF00F8C805 /* Ruby.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ruby.h; path = Code/Ruby.h; sourceTree = "<group>"; };
 		09E4F977175BC4BF00F8C805 /* Ruby.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Ruby.mm; path = Code/Ruby.mm; sourceTree = "<group>"; };
@@ -467,6 +473,7 @@
 		09321631174191FA0066CBB5 /* Layers */ = {
 			isa = PBXGroup;
 			children = (
+				09B79CC61763A9F20020EDF3 /* Controls Layer */,
 				09A181CA1748DB8C0020AAFC /* Ball Layer */,
 				09A181C91748DB840020AAFC /* Board Layer */,
 				09A181C81748DB7B0020AAFC /* Background Layer */,
@@ -604,6 +611,10 @@
 		09A173E01742BECE000AD779 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				091F3A5D175557C300B26106 /* ObjectIdentifiers.h */,
+				091F3A5E175557C300B26106 /* ObjectIdentifiers.m */,
+				097EE87D1754016B00D69F97 /* GameObject.h */,
+				097EE87E1754016B00D69F97 /* GameObject.mm */,
 				09E4F975175BC4AE00F8C805 /* Collectibles */,
 				09E4F974175BC49B00F8C805 /* Board elements */,
 				09A173E11742BF24000AD779 /* Ball.h */,
@@ -652,7 +663,7 @@
 			isa = PBXGroup;
 			children = (
 				09A181CF17491C7F0020AAFC /* BoardLayer.h */,
-				09A181D017491C7F0020AAFC /* BoardLayer.m */,
+				09A181D017491C7F0020AAFC /* BoardLayer.mm */,
 			);
 			name = "Board Layer";
 			sourceTree = "<group>";
@@ -717,15 +728,11 @@
 		09A181FD174981AA0020AAFC /* Game objects management */ = {
 			isa = PBXGroup;
 			children = (
-				091F3A5D175557C300B26106 /* ObjectIdentifiers.h */,
-				091F3A5E175557C300B26106 /* ObjectIdentifiers.m */,
 				09A173E01742BECE000AD779 /* Objects */,
 				09A181FF174981CF0020AAFC /* ObjectRepository.h */,
 				09A18200174981CF0020AAFC /* ObjectRepository.mm */,
 				09A18202174982040020AAFC /* ObjectFactory.h */,
 				09A18203174982040020AAFC /* ObjectFactory.mm */,
-				097EE87D1754016B00D69F97 /* GameObject.h */,
-				097EE87E1754016B00D69F97 /* GameObject.mm */,
 			);
 			name = "Game objects management";
 			sourceTree = "<group>";
@@ -745,6 +752,24 @@
 				097EE87B1753EC4C00D69F97 /* GameObjects.plist */,
 			);
 			name = "Game objects";
+			sourceTree = "<group>";
+		};
+		09B79CC2176397EA0020EDF3 /* Custom nodes */ = {
+			isa = PBXGroup;
+			children = (
+				09B79CC3176398C20020EDF3 /* ClickableNode.h */,
+				09B79CC4176398C20020EDF3 /* ClickableNode.mm */,
+			);
+			name = "Custom nodes";
+			sourceTree = "<group>";
+		};
+		09B79CC61763A9F20020EDF3 /* Controls Layer */ = {
+			isa = PBXGroup;
+			children = (
+				09B79CC71763AA170020EDF3 /* ControlsLayer.h */,
+				09B79CC81763AA170020EDF3 /* ControlsLayer.mm */,
+			);
+			name = "Controls Layer";
 			sourceTree = "<group>";
 		};
 		09E4F96D175B817D00F8C805 /* Sounds */ = {
@@ -917,6 +942,7 @@
 			isa = PBXGroup;
 			children = (
 				09A181D917492A3B0020AAFC /* DataModel.xcdatamodeld */,
+				09B79CC2176397EA0020EDF3 /* Custom nodes */,
 				0932161B17418C0C0066CBB5 /* Base */,
 				09A181D21749278B0020AAFC /* Infrastructure */,
 				0932162C17418F530066CBB5 /* Scenes */,
@@ -1190,7 +1216,7 @@
 				0932163B174194D10066CBB5 /* GLES-Render.mm in Sources */,
 				09A173E31742BF24000AD779 /* Ball.mm in Sources */,
 				09A181CD1748E1BB0020AAFC /* BallLayer.mm in Sources */,
-				09A181D117491C7F0020AAFC /* BoardLayer.m in Sources */,
+				09A181D117491C7F0020AAFC /* BoardLayer.mm in Sources */,
 				09A181D5174927AF0020AAFC /* LevelLoader.mm in Sources */,
 				09A181DB17492A3B0020AAFC /* DataModel.xcdatamodeld in Sources */,
 				09A181DE17492BC00020AAFC /* LevelSpecification.mm in Sources */,
@@ -1210,6 +1236,8 @@
 				091F3A5C17554FA800B26106 /* Wall.mm in Sources */,
 				091F3A5F175557C300B26106 /* ObjectIdentifiers.m in Sources */,
 				09E4F978175BC4BF00F8C805 /* Ruby.mm in Sources */,
+				09B79CC5176398C20020EDF3 /* ClickableNode.mm in Sources */,
+				09B79CC91763AA170020EDF3 /* ControlsLayer.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

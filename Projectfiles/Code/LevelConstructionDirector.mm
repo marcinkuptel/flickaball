@@ -34,7 +34,7 @@
     [self.levelBuilder buildGameplayScene];
     [self.levelBuilder buildBackgroundLayer];
     [self.levelBuilder buildBoardLayerWithWorldObjects: self.levelSpecification.worldObjects];
-    [self.levelBuilder buildUserControlsLayer];
+    [self.levelBuilder buildControlsLayer];
     [self.levelBuilder buildBallLayerWithBallParameters: self.levelSpecification.ballParameters];
 }
 
