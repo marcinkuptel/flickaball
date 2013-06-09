@@ -26,20 +26,25 @@
                                                    fntFile: @"MenuFont.fnt"];
         self.title.position = ccp(0,0);
         [self addChild: self.title];
-        
-        [[CCDirector sharedDirector].touchDispatcher addTargetedDelegate: self
-                                                                priority: 0
-                                                         swallowsTouches: NO];
     }
     return self;
 }
 
 
-- (void) cleanup
+- (void) onEnter
 {
-    [super cleanup];
+    [super onEnter];
     
+    [[CCDirector sharedDirector].touchDispatcher addTargetedDelegate: self
+                                                            priority: 0
+                                                     swallowsTouches: NO];
+}
+
+
+- (void) onExit
+{
     [[CCDirector sharedDirector].touchDispatcher removeDelegate: self];
+    [super onExit];
 }
 
 #pragma mark - Touches

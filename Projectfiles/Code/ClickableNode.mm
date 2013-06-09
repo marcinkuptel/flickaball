@@ -31,19 +31,26 @@
     if (self) {
         
         self.block = block;
-        [[CCDirector sharedDirector].touchDispatcher addTargetedDelegate: self
-                                                                priority: 0
-                                                         swallowsTouches: YES];
     }
     return self;
 }
 
 
-- (void) cleanup
+- (void) onEnter
 {
-    [super cleanup];
-    [[CCDirector sharedDirector].touchDispatcher removeDelegate: self];
+    [super onEnter];
+    [[CCDirector sharedDirector].touchDispatcher addTargetedDelegate: self
+                                                            priority: 1
+                                                     swallowsTouches: YES];
 }
+
+
+- (void) onExit
+{
+    [[CCDirector sharedDirector].touchDispatcher removeDelegate: self];
+    [super onExit];
+}
+
 
 #pragma mark - Touches  
 

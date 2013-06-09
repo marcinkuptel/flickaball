@@ -39,11 +39,6 @@ typedef NS_ENUM(NSUInteger, GLBallFlickState)
         [self addChild: ball];
         self.ball = ball;
         self.ball.physicsBody->SetLinearDamping(BALL_LINEAR_DAMPING);
-        
-        //add touch delegate
-        [[CCDirector sharedDirector].touchDispatcher addTargetedDelegate: self
-                                                                priority: 0
-                                                         swallowsTouches: NO];
     }
     return self;
 }
@@ -52,10 +47,25 @@ typedef NS_ENUM(NSUInteger, GLBallFlickState)
 - (void) cleanup
 {
     [super cleanup];
-    [[CCDirector sharedDirector].touchDispatcher removeDelegate: self];
     
     self.ball.physicsBody->GetWorld()->DestroyBody(self.ball.physicsBody);
     self.ball.physicsBody = NULL;
+}
+
+
+- (void) onEnter
+{
+    [super onEnter];
+    [[CCDirector sharedDirector].touchDispatcher addTargetedDelegate: self
+                                                            priority: 0
+                                                     swallowsTouches: NO];
+}
+
+
+- (void) onExit
+{
+    [[CCDirector sharedDirector].touchDispatcher removeDelegate: self];
+    [super onExit];
 }
 
 
